@@ -7,7 +7,8 @@ export const BoxSample = ({ position, size, color }) => {
   useFrame((state, delta) => {
     ref.current.rotation.x += delta * 0.5;
     ref.current.rotation.y += delta;
-    ref.current.rotation.z = Math.sin(state.clock.elapsedTime) * 2;
+    ref.current.rotation.z += delta * 0.5;
+    ref.current.position.z = Math.sin(state.clock.elapsedTime) * 2;
   });
   return (
     <>
