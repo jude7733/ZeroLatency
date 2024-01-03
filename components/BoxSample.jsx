@@ -1,6 +1,5 @@
 import { useFrame } from "@react-three/fiber";
 import { useRef } from "react";
-import { OrbitControls } from "@react-three/drei";
 
 export const BoxSample = ({ position, size, color }) => {
   const ref = useRef();
@@ -12,11 +11,10 @@ export const BoxSample = ({ position, size, color }) => {
   });
   return (
     <>
-      <OrbitControls />
       <directionalLight position={[0, 0, 2]} intensity={0.7} />
       <mesh position={position} ref={ref}>
         <boxGeometry args={size} />
-        <meshStandardMaterial color={color} />
+        <meshNormalMaterial color={color} />
       </mesh>
     </>
   );
