@@ -1,0 +1,49 @@
+@import '@radix-ui/colors/black-alpha.css';
+@import '@radix-ui/colors/indigo.css';
+@import '@radix-ui/colors/mauve.css';
+@import '@radix-ui/colors/purple.css';
+@import '@radix-ui/colors/violet.css';
+
+button,
+p {
+  all: unset;
+}
+
+.NavigationMenuRoot {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  width: 100vw;
+}
+
+.NavigationMenuList {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding: 10px 50px;
+  border-radius: 6px;
+  list-style: none;
+  box-shadow: 0 2px 10px var(--black-a7);
+  margin: 0;
+}
+
+.NavigationMenuTrigger,
+.NavigationMenuLink {
+  padding: 8px 12px;
+  margin: 0 10px;
+  outline: none;
+  user-select: none;
+  font-weight: 500;
+  line-height: 1;
+  border-radius: 4px;
+  font-size: 18px;
+  color: var(--violet-11);
+}
+
+.NavigationMenuLink {
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 1;
+}
