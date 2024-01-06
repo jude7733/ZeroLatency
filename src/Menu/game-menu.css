@@ -1,0 +1,25 @@
+/* game-menu.css */
+body{
+    perspective: 40vw;
+}
+.threeD-button-set li button {
+    background-color: deeppink; /* Green */
+    border: 3px solid cyan;
+    color: white;
+    padding: 15px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.5vh;
+    margin: 10px;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.threeD-button-set li button:hover {
+    background-color: #3e8e41;
+    color: white;
+    transform: translate3d(5%,5%,10px);
+    margin: 3px;
+}
