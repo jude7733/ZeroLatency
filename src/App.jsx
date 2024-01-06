@@ -1,11 +1,9 @@
-import { Canvas } from "@react-three/fiber";
-import "./App.css";
-import NavBar from "./Header/NavBar";
+import Header from "./Header/Header";
 
 function App() {
   return (
     <>
-     <NavBar />
+     <Header />
     </>
   );
 }
