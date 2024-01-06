@@ -7,7 +7,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function GdscLogo(props) {
-  const { nodes, materials } = useGLTF('./public/models/Gdsc.gltf')
+  const { nodes, materials } = useGLTF('./models/Gdsc.gltf')
   return (
     <group {...props} dispose={null}>
       <mesh geometry={nodes.Curve001.geometry} material={materials['SVGMat.002']} position={[-2.002, 0, 0]} rotation={[1.572, 0.018, -0.093]} scale={57.669}>
@@ -19,4 +19,4 @@ export function GdscLogo(props) {
   )
 }
 
-useGLTF.preload('./public/models/Gdsc.gltf')
+useGLTF.preload('./models/Gdsc.gltf')
