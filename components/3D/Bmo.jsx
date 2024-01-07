@@ -10,7 +10,9 @@ export function Bmo(props) {
   const { nodes, materials } = useGLTF("./models/bmo.gltf");
   return (
     <group {...props} dispose={null}>
-      <group scale={7.943} position={[0, -3, -0]}>
+      <ambientLight intensity={3} />
+      <pointLight intensity={7} position={[0, 0, 3]} />
+      <group scale={8.943} position={[0, -3.5, -0]}>
         <group position={[0.042, 0.309, 0.069]}>
           <mesh
             geometry={nodes.Куб001_1.geometry}
