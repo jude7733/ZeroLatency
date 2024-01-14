@@ -23,7 +23,7 @@ const Header = () => {
           flexDirection: "row",
         }}
       >
-        <Box
+        {/* <Box
           style={{
             minWidth: "400px",
             flex: 1,
@@ -37,7 +37,7 @@ const Header = () => {
             <OrbitControls maxZoom={2} autoRotate autoRotateSpeed={8} />
             <Bmo />
           </Canvas>
-        </Box>
+        </Box> */}
         <Box
           style={{
             minWidth: "300px",
