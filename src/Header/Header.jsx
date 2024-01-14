@@ -10,7 +10,6 @@ const Header = () => {
     <>
       <NavBar />
       <Canvas>
-        <OrbitControls autoRotate autoRotateSpeed={8} />
         <GdscLogo />
       </Canvas>
       <Flex
