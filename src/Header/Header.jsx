@@ -11,7 +11,7 @@ const Header = () => {
       <NavBar />
       <div style={{ height: "80vh" }}>
         <Canvas camera={{ fov: 60 }}>
-          <ambientLight intensity={0.2} />
+          <ambientLight intensity={0.3} />
           <Gdsc />
         </Canvas>
       </div>

@@ -50,10 +50,10 @@ export function Gdsc(props) {
         </Stage>
         <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -1, 0]}>
           <fog attach="fog" args={["#101010", 10, 20]} />
-          <planeGeometry args={[200, 200, 100]} />
+          <planeGeometry args={[200, 200]} />
           <MeshReflectorMaterial
             blur={[300, 100]}
-            resolution={2048}
+            resolution={1024}
             mixBlur={1}
             mixStrength={40}
             roughness={1}
