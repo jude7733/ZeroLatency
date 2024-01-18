@@ -1,8 +1,5 @@
 import { Canvas } from "@react-three/fiber";
 import NavBar from "./NavBar";
-import { Bmo } from "../components/3D/Bmo";
-import { OrbitControls } from "@react-three/drei";
-import { Mouse } from "../components/3D/Mouse";
 import { Box, Flex } from "@radix-ui/themes";
 import { Gdsc } from "../components/3D/Gdsc";
 const Header = () => {
