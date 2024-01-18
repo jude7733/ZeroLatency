@@ -1,18 +1,21 @@
 import { Canvas } from "@react-three/fiber";
 import NavBar from "./NavBar";
-import { GdscLogo } from "../components/3D/GdscLogo";
 import { Bmo } from "../components/3D/Bmo";
 import { OrbitControls } from "@react-three/drei";
 import { Mouse } from "../components/3D/Mouse";
 import { Box, Flex } from "@radix-ui/themes";
+import { Gdsc } from "../components/3D/Gdsc";
 const Header = () => {
   return (
     <>
       <NavBar />
-      <Canvas>
-        <GdscLogo />
-      </Canvas>
-      <Flex
+      <div style={{ height: "80vh" }}>
+        <Canvas camera={{ fov: 60 }}>
+          <ambientLight intensity={0.2} />
+          <Gdsc />
+        </Canvas>
+      </div>
+      {/* <Flex
         align={"center"}
         justify={"center"}
         wrap
@@ -52,7 +55,7 @@ const Header = () => {
             <Mouse />
           </Canvas>
         </Box>
-      </Flex>
+      </Flex> */}
     </>
   );
 };
