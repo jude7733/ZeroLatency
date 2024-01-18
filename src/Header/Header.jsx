@@ -1,9 +1,9 @@
 import { Canvas } from "@react-three/fiber";
 import NavBar from "./NavBar";
-import { GdscLogo } from "../../components/3D/GdscLogo";
-import { Bmo } from "../../components/3D/Bmo";
+import { GdscLogo } from "../components/3D/GdscLogo";
+import { Bmo } from "../components/3D/Bmo";
 import { OrbitControls } from "@react-three/drei";
-import { Mouse } from "../../components/3D/Mouse";
+import { Mouse } from "../components/3D/Mouse";
 import { Box, Flex } from "@radix-ui/themes";
 const Header = () => {
   return (
@@ -22,7 +22,7 @@ const Header = () => {
           flexDirection: "row",
         }}
       >
-        {/* <Box
+        <Box
           style={{
             minWidth: "400px",
             flex: 1,
@@ -36,7 +36,7 @@ const Header = () => {
             <OrbitControls maxZoom={2} autoRotate autoRotateSpeed={8} />
             <Bmo />
           </Canvas>
-        </Box> */}
+        </Box>
         <Box
           style={{
             minWidth: "300px",
