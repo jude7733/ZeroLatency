@@ -1,62 +1,51 @@
-import "./style.css";
+import "./nav.css";
 import logo from "../assets/logo.png";
+import { Button, DropdownMenu } from "@radix-ui/themes";
+import { useState } from "react";
+import { DropdownMenuIcon, HamburgerMenuIcon } from "@radix-ui/react-icons";
 
-const NavBar = () => {
+const Navbar = () => {
+  const [showNavbar, setShowNavbar] = useState(false);
+
+  const handleShowNavbar = () => {
+    setShowNavbar(!showNavbar);
+  };
+
   return (
-    <header class="header active" data-header>
-      <div class="container">
-        <a href="#" class="logo">
-          <img
-            src={logo}
-            width="110"
-            height="53"
-            alt="zerolatency"
-          />
+    <nav className="navbar">
+      <div className="container">
+        <a href="#">
+          <img src={logo} width="110" height="53" alt="zerolatency" />
         </a>
 
-        <nav class="navbar" data-navbar>
-          <ul class="navbar-list">
-            <li class="navbar-item">
-              <a href="#home" class="navbar-link" data-nav-link>
-                home
-              </a>
+        <div className={`nav-elements  ${showNavbar && "active"}`}>
+          <ul>
+            <li className="navbar-item">
+              <a href="#home">HOME</a>
             </li>
-
-            <li class="navbar-item">
-              <a href="#tournament" class="navbar-link" data-nav-link>
-                events
-              </a>
+            <li className="navbar-item">
+              <a href="#tournament">EVENTS</a>
             </li>
-
-            <li class="navbar-item">
-              <a href="#news" class="navbar-link" data-nav-link>
-                sponsors
-              </a>
+            <li className="navbar-item">
+              <a href="#news">SPONSERS</a>
             </li>
-
-            <li class="navbar-item">
-              <a href="#" class="navbar-link" data-nav-link>
-                contact
-              </a>
+            <li className="navbar-item">
+              <a href="#">CONTACT</a>
             </li>
           </ul>
-        </nav>
+        </div>
 
-        <a href="https://forms.gle/4hJcWo5N8dcaTPgX9" class="btn" data-btn>
-          Register Now
-        </a>
-
-        <button
-          class="nav-toggle-btn"
-          aria-label="toggle menu"
-          data-nav-toggler
-        >
-          <span class="line line-1"></span>
-          <span class="line line-2"></span>
-          <span class="line line-3"></span>
-        </button>
+        <div className="nav-right">
+          <a href="https://forms.gle/4hJcWo5N8dcaTPgX9">
+            <Button size="2">Register Now</Button>
+          </a>
+          <div className="menu-icon" onClick={handleShowNavbar}>
+            {!showNavbar && <HamburgerMenuIcon />}
+            {showNavbar && <DropdownMenuIcon />}
+          </div>
+        </div>
       </div>
-    </header>
+    </nav>
   );
 };
-export default NavBar;
+export default Navbar;

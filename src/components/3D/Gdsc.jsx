@@ -20,18 +20,17 @@ export function Gdsc(props) {
         <Stage environment={"city"} intensity={0.5} shadows={false}>
           <Float
             speed={4}
-            rotationIntensity={1.5}
-            floatIntensity={1}
+            rotationIntensity={1}
+            floatIntensity={0.5}
             floatingRange={[0, 0.8]}
           >
-            <pointLight position={[-1, 0.5, 1]} intensity={0.9} />
-            <pointLight position={[1, 0.5, -1]} intensity={0.9} />
+            <directionalLight position={[1, 1, 2]} intensity={0.5} />
             <mesh
               geometry={nodes.Curve001.geometry}
               material={materials["SVGMat.002"]}
-              position={[-1.945, 1.4, 0]}
+              position={[-1.945, 0.6, 0]}
               rotation={[1.582, 0.02, 0.008]}
-              scale={47.669}
+              scale={37.669}
             >
               <mesh
                 geometry={nodes.Curve.geometry}

@@ -6,12 +6,12 @@ const Header = () => {
   return (
     <>
       <NavBar />
-      <div style={{ height: "80vh" }}>
-        <Canvas camera={{ fov: 60 }}>
-          <ambientLight intensity={0.3} />
+      <Flex style={{height: "60vh"}}>
+        <Canvas camera={{ fov: 140 }}>
+          <ambientLight intensity={0.5} />
           <Gdsc />
         </Canvas>
-      </div>
+      </Flex>
       {/* <Flex
         align={"center"}
         justify={"center"}
