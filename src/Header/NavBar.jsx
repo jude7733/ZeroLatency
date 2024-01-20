@@ -1,11 +1,13 @@
 import "./style.css";
+import logo from "../assets/logo.png";
+
 const NavBar = () => {
   return (
     <header class="header active" data-header>
       <div class="container">
         <a href="#" class="logo">
           <img
-            src="../assets/logo.png"
+            src={logo}
             width="110"
             height="53"
             alt="zerolatency"
