@@ -43,12 +43,12 @@
 .nav-elements ul a {
   font-size: 16px;
   font-weight: 400;
-  color: #2f234f;
+  color: hsla(0, 0%, 87%, 1);
   text-decoration: none;
 }
 
 .nav-elements ul a.active {
-  color: #574c4c;
+  color: hsla(23, 61%, 86%, 1);
   font-weight: 500;
   position: relative;
 }
