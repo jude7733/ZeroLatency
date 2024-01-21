@@ -3,7 +3,7 @@
 .container {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 10px 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -12,7 +12,9 @@
 }
 
 .navbar {
-  height: 70px;
+  height: auto;
+  margin: 0;
+  max-height: 90px;
   background-color: hsla(240, 63%, 13%, 1);
   position: relative;
   border-bottom: hsla(267, 100%, 63%, 0.3) 2px ridge;
@@ -42,7 +44,7 @@
 
 .nav-elements ul a {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
   color: hsla(0, 0%, 87%, 1);
   text-decoration: none;
 }
@@ -71,12 +73,17 @@
 
 @media (max-width: 600px) {
   .navbar {
-    height: 60px;
+    height: 70px;
+    padding: 5px;
   }
 
   .menu-icon {
     display: block;
     cursor: pointer;
+  }
+
+  .logo {
+    padding-top: 10px;
   }
 
   .nav-elements {
@@ -88,6 +95,7 @@
     height: auto;
     transition: all 0.3s ease-in;
     overflow: hidden;
+    z-index: 1;
   }
 
   .nav-elements.active {

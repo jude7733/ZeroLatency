@@ -15,7 +15,13 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="container">
         <a href="#">
-          <img src={logo} width="110" height="53" alt="zerolatency" />
+          <img
+            className="logo"
+            src={logo}
+            width="auto"
+            height="73"
+            alt="zerolatency"
+          />
         </a>
 
         <div className={`nav-elements  ${showNavbar && "active"}`}>

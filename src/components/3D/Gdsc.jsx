@@ -48,7 +48,6 @@ export function Gdsc(props) {
           </Float>
         </Stage>
         <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -1, 0]}>
-          <fog attach="fog" args={["#101010", 10, 20]} />
           <planeGeometry args={[200, 200]} />
           <MeshReflectorMaterial
             blur={[300, 100]}
