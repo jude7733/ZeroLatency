@@ -1,11 +1,13 @@
-import { Container } from "@radix-ui/themes";
 import Header from "./Header/Header";
+import MidSection from "./MidSection/MidSection";
+import bg from "./assets/bg.jpg";
 
 function App() {
   return (
-    <Container p="0" style={{ backgroundImage: "url('/img/bg.jpg')" }}>
+    <div style={{ backgroundImage: `url(${bg})` }}>
       <Header />
-    </Container>
+      <MidSection />
+    </div>
   );
 }
 

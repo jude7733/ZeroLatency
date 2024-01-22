@@ -1,8 +1,10 @@
 import { Button, Flex, Heading } from "@radix-ui/themes";
 import banner from "../assets/hero-banner.png";
+import bannerBg from "../assets/banner-bg.png";
 const Welcome = () => {
   return (
     <Flex
+      mt="9"
       align="center"
       justify="center"
       direction="column"
@@ -37,12 +39,12 @@ const Welcome = () => {
         justify="center"
         width="100%"
         style={{
-          backgroundImage: "url('/img/banner-bg.png')",
+          backgroundImage: `url(${bannerBg})`,
           backgroundSize: "contain",
           backgroundRepeat: "no-repeat",
-            backgroundPosition: "center",
-            borderBottom: "3px solid purple",
-            borderRadius: "10%",
+          backgroundPosition: "center",
+          borderBottom: "3px solid purple",
+          borderRadius: "10%",
         }}
       >
         <img src={banner} alt="banner" width="90%" />
