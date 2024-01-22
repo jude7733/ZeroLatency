@@ -13,8 +13,8 @@ function App() {
       }}
     >
       <Header />
-      <MidSection />
-      {/* <Events /> */}
+      {/* <MidSection /> */}
+      <Events />
     </div>
   );
 }

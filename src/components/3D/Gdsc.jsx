@@ -28,7 +28,7 @@ export function Gdsc(props) {
             <mesh
               geometry={nodes.Curve001.geometry}
               material={materials["SVGMat.002"]}
-              position={[-1.945, 0.6, 0]}
+              position={[-1.945, 0.2, 0]}
               rotation={[1.582, 0.02, 0.008]}
               scale={37.669}
             >
