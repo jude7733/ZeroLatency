@@ -30,11 +30,14 @@ const Welcome = () => {
           md: "8",
           xl: "9",
         }}
+        style={{ fontSize: "clamp(1.5rem, 5vw, 3rem)" }}
       >
         Dive into the world of
         <br /> Gaming Odyssey!
       </Heading>
-      <Button style={{ fontWeight: "bold" }}>Register</Button>
+      <a href="https://forms.gle/4hJcWo5N8dcaTPgX9">
+        <Button>Register</Button>
+      </a>
       <Flex
         align="center"
         justify="center"
@@ -50,6 +53,21 @@ const Welcome = () => {
       >
         <img src={banner} alt="banner" width="90%" />
       </Flex>
+      <Heading
+        size={{
+          initial: "6",
+          sm: "7",
+          md: "8",
+          xl: "9",
+        }}
+      >
+        Experience Gaming Through
+        <br /> Latest <span style={{ color: "purple" }}>Technologies</span>
+      </Heading>
+      <p>
+        Our success thrives on a dedicated, talented team to experience gaming.
+        Join us at the event.
+      </p>
     </Flex>
   );
 };

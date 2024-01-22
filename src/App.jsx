@@ -1,3 +1,4 @@
+import Events from "./Events/Events";
 import Header from "./Header/Header";
 import MidSection from "./MidSection/MidSection";
 import bg from "./assets/bg.jpg";
@@ -13,6 +14,7 @@ function App() {
     >
       <Header />
       <MidSection />
+      {/* <Events /> */}
     </div>
   );
 }

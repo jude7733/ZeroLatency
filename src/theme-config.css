@@ -3,4 +3,8 @@
 .radix-themes {
   --default-font-family: "Oxanium";
   --heading-font-family: "Oxanium", sans-serif;
+  --font-weight-light: 200;
+  --font-weight-regular: 300;
+  --font-weight-medium: 600;
+  --font-weight-bold: 800;
 }
