@@ -1,6 +1,7 @@
 import { Button, Flex, Heading } from "@radix-ui/themes";
 import banner from "../assets/hero-banner.png";
 import bannerBg from "../assets/banner-bg.png";
+
 const Welcome = () => {
   return (
     <Flex
@@ -17,7 +18,7 @@ const Welcome = () => {
           initial: "3",
           sm: "4",
           md: "5",
-          xl: "6",
+          xl: "7",
         }}
       >
         Experience the gaming

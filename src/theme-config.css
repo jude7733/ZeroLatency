@@ -1,0 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Oxanium");
+
+.radix-themes {
+  --default-font-family: "Oxanium";
+  --heading-font-family: "Oxanium", sans-serif;
+}
