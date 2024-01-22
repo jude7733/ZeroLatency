@@ -12,8 +12,8 @@ export const EventComponent = ({ title, type }) => {
         backgroundColor: "rgb(0 0 0 / 50%)",
         borderRadius: "10%",
         padding: "2rem",
-        width: "90%",
-        maxWidth: "800px",
+        width: "95%",
+        maxWidth: "700px",
       }}
       justify="between"
       align="center"
@@ -30,7 +30,7 @@ export const EventComponent = ({ title, type }) => {
       >
         <Heading
           size={{
-            initial: "3",
+            initial: "1",
             sm: "5",
             md: "7",
             xl: "9",
@@ -39,7 +39,7 @@ export const EventComponent = ({ title, type }) => {
           {title}
         </Heading>
       </div>
-      <div style={{ minWidth: "250px", flex: 2 }}>
+      <div style={{ minWidth: "200px", flex: 3 }}>
         <Canvas>
           <ambientLight intensity={1} />
           <PresentationControls>

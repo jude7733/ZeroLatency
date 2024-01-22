@@ -9,7 +9,7 @@ const Events = () => {
       wrap="wrap"
       gap="3"
       direction="column"
-      p="9"
+      p="4"
     >
       <EventComponent title="PS5 Battle Ground" type="PS5" />
       <EventComponent title="PC gaming" type="PC" />
