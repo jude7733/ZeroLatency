@@ -2,7 +2,8 @@ import Events from "./Events/Events";
 import Header from "./Header/Header";
 import MidSection from "./MidSection/MidSection";
 import bg from "./assets/bg.jpg";
-import "./index.css";
+import { Music } from "./components/Music";
+
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         fontFamily: "Oxanium",
       }}
     >
+      <Music />
       <Header />
       {/* <MidSection /> */}
       <Events />
