@@ -1,10 +1,10 @@
-
 import ReactSound from "react-sound";
-import bgm from "../assets/bgm.mp3";
+import bgm from "/bgm.mp3";
+
 export const Music = () => {
   return (
     <>
-      <ReactSound url={bgm} playStatus="PLAYING" autoLoad />
+      <ReactSound url={bgm} playStatus="PLAYING" autoLoad  />
     </>
   );
 };
