@@ -8,4 +8,5 @@ html {
   margin: 0;
   padding: 0;
   cursor: url("./assets/bladeofchaos.png"), auto;
+  scroll-behavior: smooth;
 }

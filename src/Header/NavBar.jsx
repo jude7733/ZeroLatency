@@ -30,20 +30,22 @@ const Navbar = () => {
               <a href="#home">HOME</a>
             </li>
             <li className="navbar-item">
-              <a href="#tournament">EVENTS</a>
+              <a href="#events">EVENTS</a>
             </li>
             <li className="navbar-item">
               <a href="#news">SPONSERS</a>
             </li>
             <li className="navbar-item">
-              <a href="#">CONTACT</a>
+              <a href="#contact">CONTACT</a>
             </li>
           </ul>
         </div>
 
         <div className="nav-right">
           <a href="https://forms.gle/4hJcWo5N8dcaTPgX9">
-            <Button size="2">Register Now</Button>
+            <Button size={{ initial: "1", sm: "2", md: "2", xl: "4" }}>
+              Register
+            </Button>
           </a>
           <div className="menu-icon" onClick={handleShowNavbar}>
             {!showNavbar && <HamburgerMenuIcon />}

@@ -4,16 +4,20 @@ import { Canvas } from "@react-three/fiber";
 import { Mice } from "../components/3D/Mice";
 import { VR } from "../components/3D/VR";
 import { PresentationControls } from "@react-three/drei";
+import { Unity3D } from "../components/3D/Unity";
 
 export const EventComponent = ({ title, type }) => {
   return (
     <Flex
       style={{
         backgroundColor: "rgb(0 0 0 / 50%)",
-        borderRadius: "10%",
-        padding: "2rem",
+        borderRadius: "5%",
+        borderBottomRightRadius: "20%",
+        borderTopLeftRadius: "20%",
+        border: "hsla(267, 100%, 63%, 0.3) 3px ridge",
+        padding: "1.5rem",
         width: "95%",
-        maxWidth: "700px",
+        maxWidth: "600px",
       }}
       justify="between"
       align="center"
@@ -30,7 +34,7 @@ export const EventComponent = ({ title, type }) => {
       >
         <Heading
           size={{
-            initial: "1",
+            initial: "3",
             sm: "5",
             md: "7",
             xl: "9",
@@ -41,11 +45,12 @@ export const EventComponent = ({ title, type }) => {
       </div>
       <div style={{ minWidth: "200px", flex: 3 }}>
         <Canvas>
-          <ambientLight intensity={1} />
+          <ambientLight intensity={1.4} />
           <PresentationControls>
             {type == "PS5" && <Ps5 />}
             {type == "PC" && <Mice />}
             {type == "VR" && <VR />}
+            {type == "Unity" && <Unity3D />}
           </PresentationControls>
         </Canvas>
       </div>

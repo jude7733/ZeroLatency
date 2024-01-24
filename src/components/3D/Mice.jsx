@@ -10,7 +10,7 @@ export function Mice(props) {
   const { nodes, materials } = useGLTF("./models/mouse.gltf");
   return (
     <group {...props} dispose={null}>
-      <ambientLight intensity={4} />
+      <ambientLight intensity={1} />
       <pointLight intensity={7} position={[0.5, 2, 1]} />
       <group
         scale={105.287}

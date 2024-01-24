@@ -14,8 +14,8 @@ export function VR(props) {
   const { nodes, materials } = useGLTF("./models/VR/scene.gltf");
   return (
     <group {...props} dispose={null}>
-      <directionalLight intensity={5} position={[0, 1, 2]} />
-      <group rotation={[-Math.PI / 2, 0, 0]} scale={0.021}>
+      <directionalLight intensity={5} position={[0, 3, 1]} />
+      <group rotation={[-Math.PI / 2, 0, 4.3]} scale={0.021}>
         <mesh
           geometry={nodes.Object_2.geometry}
           material={materials.material_0}

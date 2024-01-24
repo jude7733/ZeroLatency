@@ -36,7 +36,9 @@ const Welcome = () => {
         <br /> Gaming Odyssey!
       </Heading>
       <a href="https://forms.gle/4hJcWo5N8dcaTPgX9">
-        <Button>Register</Button>
+        <Button size={{ initial: "1", sm: "2", md: "2", xl: "4" }}>
+          Register Now
+        </Button>
       </a>
       <Flex
         align="center"
