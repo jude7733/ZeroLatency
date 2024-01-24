@@ -1,0 +1,138 @@
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-top .container {
+  display: flex;
+  gap: 35px;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-text {
+  font-size: medium;
+  padding: 5%;
+}
+
+.footer-brand {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  border: 1px solid hsla(23, 61%, 86%, 1);
+  border-radius: 2%;
+}
+.logo {
+  margin-top: 5px;
+}
+.social-list {
+  display: flex;
+  gap: 10px;
+}
+
+.footer .social-link {
+  width: 40px;
+  height: 40px;
+  background-color: hsla(267, 100%, 63%, 0.3);
+  display: grid;
+  place-items: center;
+  clip-path: polygon(0% 0%, 70% 0, 100% 30%, 100% 100%, 0 100%);
+  transition: 250ms ease;
+}
+
+.footer .social-link:is(:hover, :focus-visible) {
+  background-color: hsla(267, 100%, 63%, 1);
+  transform: translateY(-2px);
+}
+
+.footer-list-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1;
+  position: relative;
+  padding-block-end: 10px;
+  margin-block-end: 20px;
+  max-width: max-content;
+}
+
+.footer-list-title::after {
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 4px;
+  background-color: hsla(267, 100%, 63%, 1);
+}
+.list-container {
+  display: flex;
+  flex: 2;
+  gap: 35px;
+  justify-content: space-between;
+}
+.footer-link {
+  padding-block: 5px;
+  color: hsla(0, 0%, 87%, 1);
+  transition: 250ms ease;
+}
+
+.footer-link:is(:hover, :focus-visible) {
+  color: hsla(267, 100%, 63%, 1);
+}
+
+.contact-item .span {
+  color: hsla(267, 100%, 63%, 1);
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.contact-item:not(:last-child) {
+  margin-block-end: 15px;
+}
+
+.footer-bottom {
+  clip-path: var(--clip-path-9);
+  background-color: var(--bg-oxford-blue-alpha-80);
+}
+
+.copyright {
+  padding: 30px 20px;
+  font-size: small;
+}
+
+
+.back-top-btn {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-image: linear-gradient(
+    to right bottom,
+    hsl(299, 100%, 52%),
+    hsl(291, 100%, 58%),
+    hsl(283, 100%, 60%),
+    hsl(273, 100%, 62%),
+    hsl(262, 100%, 63%),
+    hsl(242, 100%, 69%),
+    hsl(223, 100%, 62%),
+    hsl(210, 100%, 50%),
+    hsl(203, 100%, 50%),
+    hsl(198, 100%, 50%),
+    hsl(192, 100%, 48%),
+    hsl(185, 90%, 48%)
+  );
+  display: grid;
+  place-items: center;
+  clip-path: polygon(0% 0%, 70% 0, 100% 30%, 100% 100%, 0 100%);
+  opacity: 0;
+  transition: 250ms ease;
+  z-index: 4;
+}
+
+.back-top-btn.active {
+  opacity: 1;
+  transform: translateY(-20px);
+}
