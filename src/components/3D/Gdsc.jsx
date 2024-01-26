@@ -22,7 +22,7 @@ export function Gdsc(props) {
             speed={4}
             rotationIntensity={1}
             floatIntensity={0.5}
-            floatingRange={[0, 0.8]}
+            floatingRange={[-0.8, 0.8]}
           >
             <directionalLight position={[1, 1, 2]} intensity={0.5} />
             <mesh

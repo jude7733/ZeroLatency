@@ -3,7 +3,7 @@ import { Ps5 } from "../components/3D/Ps5";
 import { Canvas } from "@react-three/fiber";
 import { Mice } from "../components/3D/Mice";
 import { VR } from "../components/3D/VR";
-import { PresentationControls } from "@react-three/drei";
+import { Float, PresentationControls } from "@react-three/drei";
 import { Unity3D } from "../components/3D/Unity";
 
 export const EventComponent = ({ title, type }) => {
@@ -45,12 +45,14 @@ export const EventComponent = ({ title, type }) => {
       </div>
       <div style={{ minWidth: "200px", flex: 3 }}>
         <Canvas>
-          <ambientLight intensity={1.4} />
+          <ambientLight intensity={1.2} />
           <PresentationControls>
-            {type == "PS5" && <Ps5 />}
-            {type == "PC" && <Mice />}
-            {type == "VR" && <VR />}
-            {type == "Unity" && <Unity3D />}
+            <Float speed={3} rotationIntensity={2}>
+              {type == "PS5" && <Ps5 />}
+              {type == "PC" && <Mice />}
+              {type == "VR" && <VR />}
+              {type == "Unity" && <Unity3D />}
+            </Float>
           </PresentationControls>
         </Canvas>
       </div>
