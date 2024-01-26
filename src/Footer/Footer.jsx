@@ -16,14 +16,6 @@ const Footer = () => {
               First ever gaming experience event happening in Bharata Mata
               College in collaboration with GDSC BMC and Xfinity BMC.
             </p>
-
-            <ul className="social-list">
-              <li>
-                <a href="#" className="social-link">
-                  <InstagramLogoIcon color="#d4ce2d" />
-                </a>
-              </li>
-            </ul>
           </div>
           <div className="list-container">
             <div className="footer-list">
@@ -56,6 +48,13 @@ const Footer = () => {
                 <li>
                   <a href="#" className="footer-link">
                     Contact Us
+                  </a>
+                </li>
+              </ul>
+              <ul className="social-list">
+                <li>
+                  <a href="#" className="social-link">
+                    <InstagramLogoIcon color="#d4ce2d" />
                   </a>
                 </li>
               </ul>

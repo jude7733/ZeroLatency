@@ -7,7 +7,6 @@ import React from "react";
 import {
   Float,
   MeshReflectorMaterial,
-  PresentationControls,
   Stage,
   useGLTF,
 } from "@react-three/drei";
@@ -16,7 +15,6 @@ export function Gdsc(props) {
   const { nodes, materials } = useGLTF("./models/Gdsc.gltf");
   return (
     <group {...props} dispose={null}>
-      <PresentationControls>
         <Stage environment={"city"} intensity={0.5} shadows={false}>
           <Float
             speed={4}
@@ -47,22 +45,21 @@ export function Gdsc(props) {
             </mesh>
           </Float>
         </Stage>
-        <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -1, 0]}>
-          <planeGeometry args={[200, 200]} />
-          <MeshReflectorMaterial
-            blur={[300, 100]}
-            resolution={1024}
-            mixBlur={1}
-            mixStrength={40}
-            roughness={1}
-            depthScale={1.2}
-            minDepthThreshold={0.4}
-            maxDepthThreshold={1.4}
-            color={"#101010"}
-            metalness={0.5}
-          />
-        </mesh>
-      </PresentationControls>
+      <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -1, 0]}>
+        <planeGeometry args={[200, 200]} />
+        <MeshReflectorMaterial
+          blur={[300, 100]}
+          resolution={512}
+          mixBlur={1}
+          mixStrength={40}
+          roughness={1}
+          depthScale={1.2}
+          minDepthThreshold={0.4}
+          maxDepthThreshold={1.4}
+          color={"#101010"}
+          metalness={0.5}
+        />
+      </mesh>
     </group>
   );
 }

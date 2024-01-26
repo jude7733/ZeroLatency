@@ -9,7 +9,7 @@ import { useGLTF } from "@react-three/drei";
 export function Mice(props) {
   const { nodes, materials } = useGLTF("./models/mouse.gltf");
   return (
-    <group {...props} dispose={null}>
+    <group {...props} dispose={null} position={[0.5, 0, 0]}>
       <ambientLight intensity={1} />
       <pointLight intensity={7} position={[0.5, 2, 1]} />
       <group
