@@ -98,12 +98,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <a
-        href="#top"
-        className="back-top-btn"
-        aria-label="back to top"
-        data-back-top-btn
-      >
+      <a href="#top" className="back-top-btn" aria-label="back to top">
         <ArrowUpIcon color="white" />
       </a>
     </footer>
