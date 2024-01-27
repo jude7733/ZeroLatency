@@ -1,6 +1,7 @@
 import { Button, Flex, Heading } from "@radix-ui/themes";
 import banner from "../assets/hero-banner.png";
 import bannerBg from "../assets/banner-bg.png";
+import { ButtonAnimation } from "../components/CustomAnimation";
 
 const Welcome = () => {
   return (
@@ -35,11 +36,16 @@ const Welcome = () => {
         Dive into the world of
         <br /> Gaming Odyssey!
       </Heading>
-      <a href="https://forms.gle/4hJcWo5N8dcaTPgX9">
-        <Button size={{ initial: "3", sm: "5", md: "6", xl: "7" }} variant="surface">
-          Register Now
-        </Button>
-      </a>
+      <ButtonAnimation>
+        <a href="https://forms.gle/4hJcWo5N8dcaTPgX9">
+          <Button
+            size={{ initial: "3", sm: "5", md: "6", xl: "7" }}
+            variant="surface"
+          >
+            Register Now
+          </Button>
+        </a>
+      </ButtonAnimation>
       <Flex
         align="center"
         justify="center"

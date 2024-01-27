@@ -3,6 +3,7 @@ import logo from "../assets/logo.png";
 import { Button, DropdownMenu } from "@radix-ui/themes";
 import { useState } from "react";
 import { DropdownMenuIcon, HamburgerMenuIcon } from "@radix-ui/react-icons";
+import { ButtonAnimation } from "../components/CustomAnimation";
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
@@ -42,11 +43,13 @@ const Navbar = () => {
         </div>
 
         <div className="nav-right">
-          <a href="https://forms.gle/4hJcWo5N8dcaTPgX9">
-            <Button size={{ initial: "1", sm: "2", md: "2", xl: "4" }}>
-              Register
-            </Button>
-          </a>
+          <ButtonAnimation>
+            <a href="https://forms.gle/4hJcWo5N8dcaTPgX9">
+              <Button size={{ initial: "1", sm: "2", md: "2", xl: "4" }}>
+                Register
+              </Button>
+            </a>
+          </ButtonAnimation>
           <div className="menu-icon" onClick={handleShowNavbar}>
             {!showNavbar && <HamburgerMenuIcon />}
             {showNavbar && <DropdownMenuIcon />}
