@@ -5,7 +5,7 @@ import MidSection from "./MidSection/MidSection";
 import bg from "./assets/bg.jpg";
 import { Music } from "./components/Music";
 import "./App.css";
-import Reg from "./Events/REg";
+import Reg from "./Events/Reg";
 
 function App() {
   return (
@@ -19,8 +19,8 @@ function App() {
       <div className="cursor"></div>
       <Music />
       <Header />
-      <MidSection />  
-      <Events />
+      {/* <MidSection />   */}
+      {/* <Events /> */}
       <Reg />
       <Footer />
     </div>
