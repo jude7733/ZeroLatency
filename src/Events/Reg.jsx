@@ -3,13 +3,13 @@ import tekken from "../assets/tekken.jpg";
 import efootball from "../assets/E-football.jpg";
 import Ar from "../assets/Ar.jpeg";
 import "./reg.css";
-import { Reveal } from "../components/Reveal";
+import { CustomAnimation } from "../components/CustomAnimation";
 
 const Games = ({ type }) => {
   const bg =
     type === "Tekken" ? tekken : type === "E-football" ? efootball : Ar;
   return (
-    <Reveal mode="reveal">
+    <CustomAnimation mode="reveal">
       <Flex
         align="center"
         justify="center"
@@ -18,7 +18,7 @@ const Games = ({ type }) => {
           backgroundPosition: "center",
           backgroundSize: "cover",
           width: "95%",
-          maxWidth: "550px",
+          maxWidth: "600px",
           height: "320px",
           borderRadius: "2%",
         }}
@@ -47,7 +47,7 @@ const Games = ({ type }) => {
         <span className="bottom"></span>
         <span className="left"></span>
       </Flex>
-    </Reveal>
+    </CustomAnimation>
   );
 };
 

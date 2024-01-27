@@ -16,18 +16,19 @@ const slideInLeft = {
     transition: { duration: 0.5, ease: "easeInOut", delay: 1 },
   },
 };
-export const Reveal = ({ children, mode }) => {
+export const CustomAnimation = ({ children, mode }) => {
   return (
     <motion.div
       variants={mode === "slideInLeft" ? slideInLeft : reveal}
       initial="hidden"
       exit="hidden"
       whileInView="visible"
-      viewport={{ once: true }}
+      // viewport={{ once: true }}
       style={{
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
+        width: "100%",
       }}
     >
       {children}
