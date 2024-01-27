@@ -3,7 +3,7 @@ import tekken from "../assets/tekken.jpg";
 import efootball from "../assets/E-football.jpg";
 import Ar from "../assets/Ar.jpeg";
 import "./reg.css";
-import { CustomAnimation } from "../components/CustomAnimation";
+import { ButtonAnimation, CustomAnimation } from "../components/CustomAnimation";
 
 const Games = ({ type }) => {
   const bg =
@@ -39,7 +39,9 @@ const Games = ({ type }) => {
           <Heading color="purple">{type}</Heading>
           <p className="desc">Register now for amazing gaming experience</p>
           <Flex justify="end" width="100%">
-            <Button variant="outline">Register</Button>
+            <ButtonAnimation>
+              <Button variant="outline">Register</Button>
+            </ButtonAnimation>
           </Flex>
         </Flex>
         <span className="top"></span>

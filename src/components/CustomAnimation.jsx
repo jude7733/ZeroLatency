@@ -16,7 +16,7 @@ const slideInLeft = {
     transition: { duration: 0.5, ease: "easeInOut", delay: 1 },
   },
 };
-export const CustomAnimation = ({ children, mode }) => {
+export const CustomAnimation = ({ children, mode }) => {  
   return (
     <motion.div
       variants={mode === "slideInLeft" ? slideInLeft : reveal}
@@ -35,3 +35,21 @@ export const CustomAnimation = ({ children, mode }) => {
     </motion.div>
   );
 };
+export const ButtonAnimation = ({ children }) => {
+  return (
+    <motion.div
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 1.1 }}
+      whileFocus={{ scale: 1.1 }}
+      transition={{ duration: 0.1, ease: "easeInOut" }}
+      style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        width: "100%",
+      }}
+    >
+      {children}
+    </motion.div>
+  );
+}

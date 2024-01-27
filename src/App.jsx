@@ -19,8 +19,8 @@ function App() {
       <div className="cursor"></div>
       <Music />
       <Header />
-      {/* <MidSection />   */}
-      {/* <Events /> */}
+      <MidSection />  
+      <Events />
       <Reg />
       <Footer />
     </div>
