@@ -1,0 +1,28 @@
+.cursor {
+  display: none;
+}
+.cursor {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background-color: var(--bg-purple);
+  border-radius: var(--radius-circle);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 6;
+  transition: var(--transition-1);
+  transition-property: opacity, transform;
+}
+
+.parent:hover .cursor {
+  opacity: 0.5;
+}
+
+.parent .cursor.hovered {
+  transform: translate(-50%, -50%) scale(1.3);
+  opacity: 0.75;
+}

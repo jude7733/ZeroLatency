@@ -6,25 +6,26 @@ const Events = () => {
     <Flex
       justify="center"
       align="center"
-      wrap="wrap"
-      gap="3"
       direction="column"
-      p="4"
       mt="5"
       mb="6"
       id="events"
+      p="1"
+      gap="6"
     >
       <Heading
-        size={{ initial: "3", sm: "4", md: "5", lg: "8" }}
+        size={{ initial: "4", sm: "5", md: "6", lg: "8" }}
         style={{ textDecoration: "underline" }}
         color="#F2AFEF"
       >
         Events
       </Heading>
-      <EventComponent title="PS5 Battle Ground" type="PS5" />
-      <EventComponent title="PC gaming" type="PC" />
-      <EventComponent title="VR experience" type="VR" />
-      <EventComponent title="Unity Workshop" type="Unity" />
+      <Flex wrap="wrap" align="center" justify="center" gap="5">
+        <EventComponent title="PS5 Battle Ground" type="PS5" />
+        <EventComponent title="PC gaming" type="PC" />
+        <EventComponent title="VR experience" type="VR" />
+        <EventComponent title="Unity Workshop" type="Unity" />
+      </Flex>
     </Flex>
   );
 };

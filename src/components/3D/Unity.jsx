@@ -14,7 +14,7 @@ export function Unity3D(props) {
   const { nodes, materials } = useGLTF('./models/Unity/scene.gltf')
   return (
     <group {...props} dispose={null}>
-      <directionalLight intensity={0.6} position={[0, 3, 1]} />
+      <directionalLight intensity={0.4} position={[0, 3, 1]} />
       <group scale={0.015}>
         <mesh geometry={nodes.Unity_3DLogo_Material_0.geometry} material={materials.Material} rotation={[-Math.PI / 3.3, 0, 11.8]} scale={100} />
       </group>

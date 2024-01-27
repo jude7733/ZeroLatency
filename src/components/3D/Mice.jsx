@@ -11,7 +11,7 @@ export function Mice(props) {
   return (
     <group {...props} dispose={null} position={[0.5, 0, 0]}>
       <ambientLight intensity={1} />
-      <pointLight intensity={7} position={[0.5, 2, 1]} />
+      <directionalLight intensity={0.5} position={[0, 3, 0.5]} />
       <group
         scale={105.287}
         position={[0, 0, 0]}

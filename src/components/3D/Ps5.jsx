@@ -9,7 +9,7 @@ import { useGLTF } from "@react-three/drei";
 export function Ps5(props) {
   const { nodes, materials } = useGLTF("./models/ps5.gltf");
   return (
-    <group {...props} dispose={null} scale={13} position={[0, -2.5, 0]} rotation={[0, 1.4, 0]}>
+    <group {...props} dispose={null} scale={13} position={[0.5, -2.5, 0]} rotation={[0, 1.4, 0]}>
       <group scale={1.004}>
         <mesh
           geometry={nodes.Base002.geometry}

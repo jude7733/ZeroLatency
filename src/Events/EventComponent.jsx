@@ -15,9 +15,9 @@ export const EventComponent = ({ title, type }) => {
         borderBottomRightRadius: "20%",
         borderTopLeftRadius: "20%",
         border: "hsla(267, 100%, 63%, 0.3) 3px ridge",
-        padding: "1.5rem",
+        padding: "1rem",
         width: "95%",
-        maxWidth: "600px",
+        maxWidth: "500px",
       }}
       justify="between"
       align="center"
@@ -45,8 +45,9 @@ export const EventComponent = ({ title, type }) => {
       </div>
       <div style={{ minWidth: "200px", flex: 3 }}>
         <Canvas>
-          <ambientLight intensity={1.2} />
+          <ambientLight intensity={1} />
           <PresentationControls>
+            <pointLight intensity={7} position={[1, 2, 1]} />
             <Float speed={3} rotationIntensity={2}>
               {type == "PS5" && <Ps5 />}
               {type == "PC" && <Mice />}
