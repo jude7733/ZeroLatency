@@ -5,7 +5,8 @@ import Ar from "../assets/Ar.jpeg";
 import "./reg.css";
 
 const Games = ({ type }) => {
-  const bg = type === "Tekken" ? tekken : (type === "E-football" ? efootball : Ar);
+  const bg =
+    type === "Tekken" ? tekken : type === "E-football" ? efootball : Ar;
   return (
     <Flex
       align="center"
@@ -14,8 +15,9 @@ const Games = ({ type }) => {
         backgroundImage: `url(${bg})`,
         backgroundPosition: "center",
         backgroundSize: "cover",
-        width: "400px",
-        height: "300px",
+        width: "95%",
+        maxWidth: "550px",
+        height: "320px",
         borderRadius: "5%",
       }}
       className="card"
