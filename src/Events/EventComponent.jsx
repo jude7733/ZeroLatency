@@ -17,7 +17,7 @@ export const EventComponent = ({ title, type }) => {
         border: "hsla(267, 100%, 63%, 0.3) 3px ridge",
         padding: "1rem",
         width: "95%",
-        maxWidth: "500px",
+        maxWidth: "550px",
       }}
       justify="between"
       align="center"
