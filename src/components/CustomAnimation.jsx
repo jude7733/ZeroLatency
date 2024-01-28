@@ -43,7 +43,7 @@ export const CustomAnimation = ({ children, mode }) => {
         alignItems: "center",
         justifyContent: "center",
         width: "auto",
-        maxWidth: "95%",
+        shrink: 1,
       }}
     >
       {children}
@@ -77,7 +77,7 @@ export const VideoAnimation = ({ children }) => {
         justifyContent: "center",
         width: "auto",
         marginBottom: "30vh",
-        marginTop: "40vh",
+        marginTop: "30vh",
       }}
     >
       {children}
@@ -101,7 +101,7 @@ export const TextAnimation = ({ children }) => {
       whileInView="fadeUp"
       style={{
         textAlign: "center",
-        width: "max-content",
+        maxWidth: "100%",
       }}
     >
       {children}
