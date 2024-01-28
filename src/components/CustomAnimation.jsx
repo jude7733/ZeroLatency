@@ -8,19 +8,19 @@ const reveal = {
     transition: { duration: 0.5, ease: "easeInOut" },
   },
 };
-const slideInLeft = {
-  hidden: { opacity: 0, x: -100 },
+const slideInTop = {
+  hidden: { opacity: 0, y: -100 },
   visible: {
     opacity: 1,
-    x: 0,
+    y: 0,
     transition: { duration: 0.5, ease: "easeInOut", delay: 0.5 },
   },
 };
-const slideInRight = {
-  hidden: { opacity: 0, x: 100 },
+const slideInBottom = {
+  hidden: { opacity: 0, y: 100 },
   visible: {
     opacity: 1,
-    x: 0,
+    y: 0,
     transition: { duration: 0.5, ease: "easeInOut", delay: 1 },
   },
 };
@@ -28,10 +28,10 @@ export const CustomAnimation = ({ children, mode }) => {
   return (
     <motion.div
       variants={
-        mode === "slideInLeft"
-          ? slideInLeft
-          : mode === "slideInRight"
-          ? slideInRight
+        mode === "slideInTop"
+          ? slideInTop
+          : mode === "slideInBottom"
+          ? slideInBottom
           : reveal
       }
       initial="hidden"

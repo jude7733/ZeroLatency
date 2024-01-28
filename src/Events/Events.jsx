@@ -21,17 +21,17 @@ const Events = () => {
       >
         Events
       </Heading>
-      <Flex wrap="wrap" align="center" justify="center" gap="5">
-        <CustomAnimation mode="slideInLeft">
+      <Flex wrap="wrap" align="center" justify="center" gap="5" width="100%">
+        <CustomAnimation mode="slideInTop">
           <EventComponent title="PS5 Battle Ground" type="PS5" />
         </CustomAnimation>
-        <CustomAnimation mode="slideInRight">
+        <CustomAnimation mode="slideInTop">
           <EventComponent title="PC gaming" type="PC" />
         </CustomAnimation>
-        <CustomAnimation mode="slideInLeft">
+        <CustomAnimation mode="slideInBottom">
           <EventComponent title="VR experience" type="VR" />
         </CustomAnimation>
-        <CustomAnimation mode="slideInRight">
+        <CustomAnimation mode="slideInBottom">
           <EventComponent title="Unity Workshop" type="Unity" />
         </CustomAnimation>
       </Flex>
