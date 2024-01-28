@@ -35,15 +35,14 @@ export const CustomAnimation = ({ children, mode, index = 1 }) => {
           : reveal
       }
       initial="hidden"
-      exit="hidden"
       whileInView="visible"
       custom={index}
-      // viewport={{ once: true }}
+      viewport={{ once: true }}
       style={{
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        width: "100%",
+        width: "auto",
         height: "auto",
       }}
     >

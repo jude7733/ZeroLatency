@@ -1,7 +1,7 @@
 import { Button, Flex, Heading } from "@radix-ui/themes";
 import tekken from "../assets/tekken.jpg";
-import efootball from "../assets/E-football.jpg";
-import Ar from "../assets/Ar.jpeg";
+import efootball from "../assets/E-football.jpeg";
+import Ar from "../assets/Ar.jpg";
 import "./reg.css";
 import { ButtonAnimation, CustomAnimation } from "../components/CustomAnimation";
 import { PlayIcon } from "@radix-ui/react-icons";
@@ -29,7 +29,7 @@ const Games = ({ type }) => {
           direction="column"
           align="start"
           p="5"
-          gap="7"
+          gap="9"
           style={{
             backgroundColor: "rgb(0 0 0 / 80%)",
             width: "100%",
