@@ -1,0 +1,11 @@
+.video {
+  padding: 50vh 0;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgb(16, 13, 42) 0%,
+    rgb(0, 0, 0) 30%,
+    rgb(0, 0, 0) 70%,
+    rgb(16, 13, 42) 100%
+  );
+}

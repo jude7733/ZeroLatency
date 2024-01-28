@@ -4,13 +4,13 @@ import efootball from "../assets/E-football.jpg";
 import Ar from "../assets/Ar.jpeg";
 import "./reg.css";
 import { ButtonAnimation, CustomAnimation } from "../components/CustomAnimation";
+import { PlayIcon } from "@radix-ui/react-icons";
 
 const Games = ({ type }) => {
   const bg =
     type === "Tekken" ? tekken : type === "E-football" ? efootball : Ar;
   return (
-    <CustomAnimation mode="reveal">
-      <Flex
+    <Flex
         align="center"
         justify="center"
         style={{
@@ -24,12 +24,14 @@ const Games = ({ type }) => {
         }}
         className="card"
       >
+        <CustomAnimation mode="reveal">
         <Flex
           direction="column"
           align="start"
-          p="2"
+          p="5"
+          gap="7"
           style={{
-            backgroundColor: "rgb(0 0 0 / 70%)",
+            backgroundColor: "rgb(0 0 0 / 80%)",
             width: "100%",
             height: "100%",
             borderRadius: "8%",
@@ -40,16 +42,16 @@ const Games = ({ type }) => {
           <p className="desc">Register now for amazing gaming experience</p>
           <Flex justify="end" width="100%">
             <ButtonAnimation>
-              <Button variant="outline">Register</Button>
+              <Button variant="outline">Play<PlayIcon /></Button>
             </ButtonAnimation>
           </Flex>
         </Flex>
+    </CustomAnimation>
         <span className="top"></span>
         <span className="right"></span>
         <span className="bottom"></span>
         <span className="left"></span>
       </Flex>
-    </CustomAnimation>
   );
 };
 

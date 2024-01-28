@@ -1,13 +1,16 @@
-import { VideoAnimation } from "../components/CustomAnimation";
+import { CustomAnimation} from "../components/CustomAnimation";
 import Intro from "/vid/zero_latency.mp4";
+import "./Video.css"
 
 const MidSection = () => {
   return (
-    <VideoAnimation>
-      <video autoPlay={true} loop width="100%" muted>
-        <source src={Intro} type="video/mp4" />
-      </video>
-    </VideoAnimation>
+    <div className="video">
+      <CustomAnimation mode="reveal">
+        <video autoPlay={true} loop width="100%" muted style={{maxWidth: "720px"}}>
+          <source src={Intro} type="video/mp4" />
+        </video>
+      </CustomAnimation>
+    </div>
   );
 };
 export default MidSection;

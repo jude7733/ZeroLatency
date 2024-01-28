@@ -10,7 +10,7 @@ const Welcome = () => {
       align="center"
       justify="center"
       direction="column"
-      gap="5"
+      gap="6"
       style={{ textAlign: "center" }}
     >
       <TextAnimation>

@@ -5,16 +5,16 @@ const reveal = {
   visible: {
     opacity: 1,
     scale: 1,
-    transition: { duration: 0.5, ease: "easeInOut" },
+    transition: { duration: 0.5, delay: 0.3, ease: "easeInOut" },
   },
 };
 const slideInTop = {
   hidden: { opacity: 0, y: -100 },
-  visible: {
+  visible: (index) => ({
     opacity: 1,
     y: 0,
-    transition: { duration: 0.5, ease: "easeInOut", delay: 0.5 },
-  },
+    transition: { duration: 0.5, ease: "easeInOut", delay: 0.2 * index },
+  }),
 };
 const slideInBottom = {
   hidden: { opacity: 0, y: 100 },
@@ -24,7 +24,7 @@ const slideInBottom = {
     transition: { duration: 0.5, ease: "easeInOut", delay: 1 },
   },
 };
-export const CustomAnimation = ({ children, mode }) => {
+export const CustomAnimation = ({ children, mode, index = 1 }) => {
   return (
     <motion.div
       variants={
@@ -37,13 +37,14 @@ export const CustomAnimation = ({ children, mode }) => {
       initial="hidden"
       exit="hidden"
       whileInView="visible"
+      custom={index}
       // viewport={{ once: true }}
       style={{
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        width: "auto",
-        shrink: 1,
+        width: "100%",
+        height: "auto",
       }}
     >
       {children}
@@ -58,27 +59,6 @@ export const ButtonAnimation = ({ children }) => {
       whileTap={{ scale: 1.1 }}
       whileFocus={{ scale: 1.1 }}
       transition={{ duration: 0.1, ease: "easeInOut" }}
-    >
-      {children}
-    </motion.div>
-  );
-};
-
-export const VideoAnimation = ({ children }) => {
-  return (
-    <motion.div
-      variants={reveal}
-      initial="hidden"
-      exit="hidden"
-      whileInView="visible"
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        width: "auto",
-        marginBottom: "30vh",
-        marginTop: "30vh",
-      }}
     >
       {children}
     </motion.div>

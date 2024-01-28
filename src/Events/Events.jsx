@@ -25,13 +25,13 @@ const Events = () => {
         <CustomAnimation mode="slideInTop">
           <EventComponent title="PS5 Battle Ground" type="PS5" />
         </CustomAnimation>
-        <CustomAnimation mode="slideInTop">
+        <CustomAnimation mode="slideInTop" index={2}>
           <EventComponent title="PC gaming" type="PC" />
         </CustomAnimation>
-        <CustomAnimation mode="slideInBottom">
+        <CustomAnimation mode="slideInTop" index={3}>
           <EventComponent title="VR experience" type="VR" />
         </CustomAnimation>
-        <CustomAnimation mode="slideInBottom">
+        <CustomAnimation mode="slideInTop" index={4}>
           <EventComponent title="Unity Workshop" type="Unity" />
         </CustomAnimation>
       </Flex>
