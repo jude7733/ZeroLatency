@@ -8,7 +8,7 @@ const Header = () => {
     <>
       <NavBar />
       <Welcome />
-      <Flex style={{ height: "60vh" }}>
+      <Flex style={{ height: "60vh" }} mb="9">
         <Canvas camera={{ fov: 140 }}>
           <ambientLight intensity={0.5} />
           <Gdsc />

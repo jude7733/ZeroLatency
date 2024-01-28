@@ -16,11 +16,12 @@ export const EventComponent = ({ title, type }) => {
         borderTopLeftRadius: "20%",
         border: "hsla(267, 100%, 63%, 0.3) 3px ridge",
         padding: "1rem",
-        width: "95%",
-        maxWidth: "550px",
+        Width: "95%",
+        maxWidth: "450px",
       }}
       justify="between"
       align="center"
+      grow="1"
     >
       <div
         style={{
@@ -35,7 +36,7 @@ export const EventComponent = ({ title, type }) => {
         <Heading
           size={{
             initial: "3",
-            sm: "5",
+            sm: "4",
             md: "7",
             xl: "9",
           }}
@@ -43,7 +44,7 @@ export const EventComponent = ({ title, type }) => {
           {title}
         </Heading>
       </div>
-      <div style={{ minWidth: "200px", flex: 3 }}>
+      <div style={{ minWidth: "180px", flex: 3 }}>
         <Canvas>
           <ambientLight intensity={1} />
           <PresentationControls>

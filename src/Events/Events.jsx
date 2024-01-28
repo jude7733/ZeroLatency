@@ -1,5 +1,6 @@
 import { Flex, Heading } from "@radix-ui/themes";
 import { EventComponent } from "./EventComponent";
+import { CustomAnimation } from "../components/CustomAnimation";
 
 const Events = () => {
   return (
@@ -21,10 +22,18 @@ const Events = () => {
         Events
       </Heading>
       <Flex wrap="wrap" align="center" justify="center" gap="5">
-        <EventComponent title="PS5 Battle Ground" type="PS5" />
-        <EventComponent title="PC gaming" type="PC" />
-        <EventComponent title="VR experience" type="VR" />
-        <EventComponent title="Unity Workshop" type="Unity" />
+        <CustomAnimation mode="slideInLeft">
+          <EventComponent title="PS5 Battle Ground" type="PS5" />
+        </CustomAnimation>
+        <CustomAnimation mode="slideInRight">
+          <EventComponent title="PC gaming" type="PC" />
+        </CustomAnimation>
+        <CustomAnimation mode="slideInLeft">
+          <EventComponent title="VR experience" type="VR" />
+        </CustomAnimation>
+        <CustomAnimation mode="slideInRight">
+          <EventComponent title="Unity Workshop" type="Unity" />
+        </CustomAnimation>
       </Flex>
     </Flex>
   );
