@@ -63,7 +63,7 @@ const Games = ({ type }) => {
           <Flex justify="end" width="100%">
             <ButtonAnimation>
               <Button variant="outline">
-                Play
+                Register
                 <PlayIcon />
               </Button>
             </ButtonAnimation>
