@@ -42,7 +42,7 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <div className="nav-right">
+        {/*<div className="nav-right">
           <ButtonAnimation>
             <a href="https://forms.gle/4hJcWo5N8dcaTPgX9">
               <Button size={{ initial: "1", sm: "2", md: "2", xl: "4" }}>
@@ -54,7 +54,7 @@ const Navbar = () => {
             {!showNavbar && <HamburgerMenuIcon />}
             {showNavbar && <DropdownMenuIcon />}
           </div>
-        </div>
+        </div> */}
       </div>
     </nav>
   );
