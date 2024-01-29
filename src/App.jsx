@@ -6,6 +6,7 @@ import bg from "./assets/bg.jpg";
 import { Music } from "./components/Music";
 import "./App.css";
 import Reg from "./Events/Reg";
+import Sponsers from "./components/Sponsers";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <MidSection />  
       <Events />
       <Reg />
+      <Sponsers />
       <Footer />
     </div>
   );

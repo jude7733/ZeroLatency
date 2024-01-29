@@ -53,7 +53,10 @@ const Footer = () => {
               </ul>
               <ul className="social-list">
                 <li>
-                  <a href="#" className="social-link">
+                  <a
+                    href="https://www.instagram.com/zero.latency?igsh=MXZ6YXo0ZnQ4ZDM="
+                    className="social-link"
+                  >
                     <InstagramLogoIcon color="#d4ce2d" />
                   </a>
                 </li>

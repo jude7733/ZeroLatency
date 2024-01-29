@@ -66,7 +66,7 @@ const Reg = () => {
       direction="column"
       gap="8"
     >
-      <Heading>Tournaments</Heading>
+      <Heading>Tournament Registration</Heading>
       <Games type="Tekken" />
       <Games type="E-football" />
       <Games type="Ar treasure hunt" />
