@@ -62,10 +62,28 @@ const Games = ({ type }) => {
           )}
           <Flex justify="end" width="100%">
             <ButtonAnimation>
-              <Button variant="outline">
-                Register
-                <PlayIcon />
-              </Button>
+              {type === "Tekken" ? (
+                <a href="https://docs.google.com/forms/d/1fPICnf7TlkPvOycZ0MnHAM5oMxXTypGt5_BWhUZ_j14/edit">
+                  <Button variant="outline">
+                    Register
+                    <PlayIcon />
+                  </Button>
+                </a>
+              ) : type === "E-football" ? (
+                <a href="https://docs.google.com/forms/d/17jEQy3OrPqqfwWg6klwZaO2VDhEUgXWDr9-krRMgsaw/edit">
+                  <Button variant="outline">
+                    Register
+                    <PlayIcon />
+                  </Button>
+                </a>
+              ) : (
+                <a href="https://docs.google.com/forms/d/1X3dMlzXO9fPCvS2AhxuDCGE7VWsT2or5HzTrbXSyEjM/edit">
+                  <Button variant="outline">
+                    Register
+                    <PlayIcon />
+                  </Button>
+                </a>
+              )}
             </ButtonAnimation>
           </Flex>
         </Flex>
