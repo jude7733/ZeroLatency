@@ -111,8 +111,7 @@ const Reg = () => {
       <Games
         type="Unity"
         desc="Explore creativity and innovation! 🚀 Register now for the
-              ultimate Game Development experience and unleash your creativity
-              in the world of pixels and possibilities.🎮"
+              ultimate Game Development experience and unleash your creativity🎮"
       />
       <Games
         type="Tekken"
