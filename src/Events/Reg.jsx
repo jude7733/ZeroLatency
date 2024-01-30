@@ -1,4 +1,5 @@
 import { Button, Flex, Heading } from "@radix-ui/themes";
+import unity from "../assets/Unity.jpg";
 import tekken from "../assets/tekken.jpg";
 import efootball from "../assets/E-football.jpeg";
 import Ar from "../assets/Ar.jpg";
@@ -11,7 +12,13 @@ import { PlayIcon } from "@radix-ui/react-icons";
 
 const Games = ({ type, desc }) => {
   const bg =
-    type === "Tekken" ? tekken : type === "E-football" ? efootball : Ar;
+    type === "Unity"
+      ? unity
+      : type === "Tekken"
+      ? tekken
+      : type === "E-football"
+      ? efootball
+      : Ar;
 
   return (
     <Flex
@@ -48,7 +55,14 @@ const Games = ({ type, desc }) => {
 
           <Flex justify="end" width="100%">
             <ButtonAnimation>
-              {type === "Tekken" ? (
+              {type === "Unity" ? (
+                <a href="https://forms.gle/VFUnbksa7iaKy9fi9">
+                  <Button variant="outline">
+                    Register
+                    <PlayIcon />
+                  </Button>
+                </a>
+              ) : type === "Tekken" ? (
                 <a href="https://docs.google.com/forms/d/1fPICnf7TlkPvOycZ0MnHAM5oMxXTypGt5_BWhUZ_j14/edit">
                   <Button variant="outline">
                     Register
@@ -94,6 +108,12 @@ const Reg = () => {
       gap="8"
     >
       <Heading>Tournament Registration</Heading>
+      <Games
+        type="Unity"
+        desc="Explore creativity and innovation! 🚀 Register now for the
+              ultimate Game Development experience and unleash your creativity
+              in the world of pixels and possibilities.🎮"
+      />
       <Games
         type="Tekken"
         desc="Get ready to fight your way to the top in the electrifying
