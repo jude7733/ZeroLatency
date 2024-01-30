@@ -9,7 +9,7 @@ import {
 } from "../components/CustomAnimation";
 import { PlayIcon } from "@radix-ui/react-icons";
 
-const Games = ({ type }) => {
+const Games = ({ type, desc }) => {
   const bg =
     type === "Tekken" ? tekken : type === "E-football" ? efootball : Ar;
 
@@ -33,7 +33,7 @@ const Games = ({ type }) => {
           direction="column"
           align="start"
           p="5"
-          gap="9"
+          gap="7"
           style={{
             backgroundColor: "rgb(0 0 0 / 80%)",
             width: "100%",
@@ -43,23 +43,9 @@ const Games = ({ type }) => {
           }}
         >
           <Heading color="purple">{type}</Heading>
-          {type === "Tekken" ? (
-            <p className="desc">
-              Get ready to fight your way to the top in the electrifying
-              Tekken Tournament!🔥
-            </p>
-          ) : type === "E-football" ? (
-            <p className="desc">
-              Kick off your digital soccer journey in the thrilling world of
-               E-football!⚽🎮
-            </p>
-          ) : (
-            <p className="desc">
-              Discover treasures all around you! Explore, search, and win
-              exciting rewards in this augmented reality adventure!
-              🌟 #ARtreasurehunt
-            </p>
-          )}
+
+          <p className="desc">{desc}</p>
+
           <Flex justify="end" width="100%">
             <ButtonAnimation>
               {type === "Tekken" ? (
@@ -108,9 +94,22 @@ const Reg = () => {
       gap="8"
     >
       <Heading>Tournament Registration</Heading>
-      <Games type="Tekken" />
-      <Games type="E-football" />
-      <Games type="Ar treasure hunt" />
+      <Games
+        type="Tekken"
+        desc="Get ready to fight your way to the top in the electrifying
+              Tekken Tournament!🔥"
+      />
+      <Games
+        type="E-football"
+        desc=" Kick off your digital soccer journey in the thrilling world of
+               E-football!⚽🎮"
+      />
+      <Games
+        type="Ar treasure hunt"
+        desc=" Discover treasures all around you! Explore, search, and win
+              exciting rewards in this augmented reality adventure!
+              🌟 #ARtreasurehunt"
+      />
     </Flex>
   );
 };
