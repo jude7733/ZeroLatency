@@ -127,7 +127,7 @@ const Reg = () => {
         type="Ar treasure hunt"
         desc=" Discover treasures all around you! Explore, search, and win
               exciting rewards in this augmented reality adventure!
-              🌟 #ARtreasurehunt"
+              🌟 "
       />
     </Flex>
   );
