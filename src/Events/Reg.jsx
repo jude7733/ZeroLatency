@@ -111,8 +111,7 @@ const Reg = () => {
       <Games
         type="Unity"
         desc="Explore creativity and innovation! 🚀 Register now for the
-              ultimate Game Development experience and unleash your creativity
-              in the world of pixels and possibilities.🎮"
+              ultimate Game Development experience and unleash your creativity🎮"
       />
       <Games
         type="Tekken"
@@ -128,7 +127,7 @@ const Reg = () => {
         type="Ar treasure hunt"
         desc=" Discover treasures all around you! Explore, search, and win
               exciting rewards in this augmented reality adventure!
-              🌟 #ARtreasurehunt"
+              🌟 "
       />
     </Flex>
   );
