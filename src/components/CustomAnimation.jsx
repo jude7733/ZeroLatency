@@ -42,8 +42,9 @@ export const CustomAnimation = ({ children, mode, index = 1 }) => {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        width: "auto",
+        width: "100%",
         height: "auto",
+        maxWidth: "500px",
       }}
     >
       {children}

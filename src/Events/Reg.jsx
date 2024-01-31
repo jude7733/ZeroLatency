@@ -107,12 +107,13 @@ const Reg = () => {
       direction="column"
       gap="8"
     >
-      <Heading>Tournament Registration</Heading>
+      <Heading color="#9867C5">Workshop</Heading>
       <Games
         type="Unity"
         desc="Explore creativity and innovation! 🚀 Register now for the
               ultimate Game Development experience and unleash your creativity🎮"
       />
+      <Heading color="#9867C5">Competitions</Heading>
       <Games
         type="Tekken"
         desc="Get ready to fight your way to the top in the electrifying
