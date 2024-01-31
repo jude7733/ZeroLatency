@@ -12,21 +12,23 @@ const MidSection = () => {
       <Flex
         justify="center"
         align="center"
-        gap="7"
+        gap="3"
         style={{ marginTop: "4rem" }}
       >
         <LogoAnimation mode="left">
           <img
             src={gdsc}
             alt="gdsc logo"
-            style={{ width: "auto", maxWidth: "200px" }}
+            style={{ maxWidth: "150px" }}
+            width="auto"
           />
         </LogoAnimation>
         <LogoAnimation mode="right">
           <img
             src={xfinity}
             alt="xfinity logo"
-            style={{ width: "auto", maxWidth: "200px" }}
+            style={{ maxWidth: "150px" }}
+            width="auto"
           />
         </LogoAnimation>
       </Flex>

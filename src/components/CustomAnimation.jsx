@@ -92,12 +92,12 @@ export const LogoAnimation = ({ children, mode }) => {
   return (
     <motion.div
       variants={{
-        left: { x: -100, opacity: 0 },
-        right: { x: 100, opacity: 0 },
+        left: { x: -20, opacity: 0 },
+        right: { x: 20, opacity: 0 },
         visible: {
           x: 0,
           opacity: 1,
-          transition: { duration: 0.5, delay: 0.5, ease: "easeInOut" },
+          transition: { duration: 1, delay: 0.5, ease: "easeInOut" },
         },
       }}
       initial={mode}
@@ -105,6 +105,8 @@ export const LogoAnimation = ({ children, mode }) => {
       whileInView="visible"
       style={{
         textAlign: "center",
+        maxWidth: "200px",
+        minWidth: "50px",
       }}
     >
       {children}
