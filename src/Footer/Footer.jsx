@@ -19,51 +19,6 @@ const Footer = () => {
           </div>
           <div className="list-container">
             <div className="footer-list">
-              <p className="title footer-list-title has-after">Usefull Links</p>
-              <ul>
-                <li>
-                  <a href="#" className="footer-link">
-                    Tournaments
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" className="footer-link">
-                    Help Center
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" className="footer-link">
-                    Privacy and Policy
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" className="footer-link">
-                    Terms of Use
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" className="footer-link">
-                    Contact Us
-                  </a>
-                </li>
-              </ul>
-              <ul className="social-list">
-                <li>
-                  <a
-                    href="https://www.instagram.com/zero.latency?igsh=MXZ6YXo0ZnQ4ZDM="
-                    className="social-link"
-                  >
-                    <InstagramLogoIcon color="#d4ce2d" />
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div className="footer-list">
               <p className="title footer-list-title has-after">Contact Us</p>
               <div className="contact-item" id="contact">
                 <br />
@@ -92,6 +47,16 @@ const Footer = () => {
                   +91 80867 38656
                 </a>
               </div>
+              <ul className="social-list">
+                <li>
+                  <a
+                    href="https://www.instagram.com/zero.latency?igsh=MXZ6YXo0ZnQ4ZDM="
+                    className="social-link"
+                  >
+                    <InstagramLogoIcon color="#d4ce2d" />
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

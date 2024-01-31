@@ -14,7 +14,6 @@ function App() {
       style={{
         backgroundImage: `url(${bg})`,
         fontFamily: "Oxanium",
-        backgroundSize: "cover",
       }}
     >
       <div className="cursor"></div>
