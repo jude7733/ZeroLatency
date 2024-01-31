@@ -1,6 +1,4 @@
 .video {
-  padding: 50vh 0;
-  background: rgb(0, 0, 0);
   background: linear-gradient(
     0deg,
     rgb(16, 13, 42) 0%,
@@ -8,4 +6,15 @@
     rgb(0, 0, 0) 70%,
     rgb(16, 13, 42) 100%
   );
+  position: absolute;
+  width: 100dvw;
+  height: 100%;
+  z-index: 0;
+}
+
+.overlay {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  padding: 10px;
 }

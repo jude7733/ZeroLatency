@@ -14,13 +14,6 @@ const Events = () => {
       p="1"
       gap="6"
     >
-      <Heading
-        size={{ initial: "4", sm: "5", md: "6", lg: "8" }}
-        style={{ textDecoration: "underline" }}
-        color="#F2AFEF"
-      >
-        Events
-      </Heading>
       <Flex wrap="wrap" align="center" justify="center" gap="5" width="100%">
         <CustomAnimation mode="slideInTop">
           <EventComponent title="PS5 Battle Ground" type="PS5" />

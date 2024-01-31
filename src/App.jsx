@@ -1,12 +1,11 @@
-import Events from "./Events/Events";
-import Footer from "./Footer/Footer";
+import { Music } from "./components/Music";
 import Header from "./Header/Header";
 import MidSection from "./MidSection/MidSection";
-import bg from "./assets/bg.jpg";
-import { Music } from "./components/Music";
-import "./App.css";
 import Reg from "./Events/Reg";
 import Sponsers from "./components/Sponsers";
+import Footer from "./Footer/Footer";
+import bg from "./assets/bg.jpg";
+import "./App.css";
 
 function App() {
   return (
@@ -15,13 +14,13 @@ function App() {
       style={{
         backgroundImage: `url(${bg})`,
         fontFamily: "Oxanium",
+        backgroundSize: "cover",
       }}
     >
       <div className="cursor"></div>
       <Music />
       <Header />
       <MidSection />  
-      <Events />
       <Reg />
       <Sponsers />
       <Footer />
