@@ -1,4 +1,9 @@
-.video {
+.videoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40vh 0;
+  width: 100%;
   background: linear-gradient(
     0deg,
     rgb(16, 13, 42) 0%,
@@ -6,15 +11,13 @@
     rgb(0, 0, 0) 70%,
     rgb(16, 13, 42) 100%
   );
-  position: absolute;
-  width: 100dvw;
-  height: 100%;
-  z-index: 0;
 }
-
+.video{
+  width: 100%;
+  height: auto;
+  max-width: 729px;
+}
 .overlay {
-  z-index: 1;
-  position: relative;
   text-align: center;
   padding: 10px;
 }

@@ -7,14 +7,32 @@ const Events = () => {
     <Flex
       justify="center"
       align="center"
-      direction="column"
       mt="5"
       mb="6"
       id="events"
       p="1"
       gap="6"
+      width="100%"
+      style={{
+        borderBottom: "3px solid purple",
+        padding: "2rem 0",
+        borderRadius: "2rem",
+        borderTop: "2px groove purple",
+        maxWidth: "1200px",
+      }}
     >
-      <Flex wrap="wrap" align="center" justify="center" gap="5" width="100%">
+      <Flex wrap="wrap" align="center" justify="center" gap="5">
+        <div style={{ width: "100%" }}>
+          <Heading
+            size={{ initial: "6", sm: "6", md: "7", lg: "8" }}
+            style={{
+              textAlign: "center",
+            }}
+            color="#F2AFEF"
+          >
+            Events
+          </Heading>
+        </div>
         <CustomAnimation mode="slideInTop">
           <EventComponent title="PS5 Battle Ground" type="PS5" />
         </CustomAnimation>

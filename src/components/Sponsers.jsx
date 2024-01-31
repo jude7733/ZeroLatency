@@ -23,7 +23,7 @@ const Sponsers = () => {
         style={{
           borderBottom: "3px purple groove",
           width: "80%",
-          borderRadius: "10%",
+          borderRadius: "5%",
         }}
         mb="4"
       >
@@ -32,7 +32,7 @@ const Sponsers = () => {
       <Heading
         m="4"
         color="purple"
-        size={{ initial: "1", sm: "2", md: "3", lg: "4" }}
+        size={{ initial: "3", sm: "4", md: "5", lg: "6" }}
       >
         Co-Sponsers
       </Heading>
@@ -44,7 +44,7 @@ const Sponsers = () => {
         style={{
           borderBottom: "2px purple groove",
           width: "70%",
-          borderRadius: "10%",
+          borderRadius: "5%",
           maxWidth: "600px",
         }}
       >
@@ -54,7 +54,7 @@ const Sponsers = () => {
       <Heading
         m="4"
         color="purple"
-        size={{ initial: "1", sm: "2", md: "3", lg: "4" }}
+        size={{ initial: "2", sm: "3", md: "4", lg: "5" }}
       >
         Other Sponsers
       </Heading>

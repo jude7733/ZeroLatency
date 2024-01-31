@@ -14,9 +14,13 @@ function App() {
       style={{
         backgroundImage: `url(${bg})`,
         fontFamily: "Oxanium",
+        backgroundSize: "cover",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
       }}
     >
-      <div className="cursor"></div>
       <Music />
       <Header />
       <MidSection />  
