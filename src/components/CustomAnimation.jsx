@@ -88,3 +88,26 @@ export const TextAnimation = ({ children }) => {
     </motion.div>
   );
 };
+export const LogoAnimation = ({ children, mode }) => {
+  return (
+    <motion.div
+      variants={{
+        left: { x: -100, opacity: 0 },
+        right: { x: 100, opacity: 0 },
+        visible: {
+          x: 0,
+          opacity: 1,
+          transition: { duration: 0.5, delay: 0.5, ease: "easeInOut" },
+        },
+      }}
+      initial={mode}
+      exit={mode}
+      whileInView="visible"
+      style={{
+        textAlign: "center",
+      }}
+    >
+      {children}
+    </motion.div>
+  );
+};
