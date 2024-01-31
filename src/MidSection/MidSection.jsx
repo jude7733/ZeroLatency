@@ -1,10 +1,10 @@
-import { CustomAnimation } from "../components/CustomAnimation";
 import Intro from "/vid/zero_latency.mp4";
 import "./Video.css";
 import Events from "../Events/Events";
 import { Flex, Heading } from "@radix-ui/themes";
 import gdsc from "../assets/gdsclogo.png";
 import xfinity from "../assets/xfinity-logo.png";
+import { LogoAnimation } from "../components/CustomAnimation";
 
 const MidSection = () => {
   return (
@@ -15,16 +15,20 @@ const MidSection = () => {
         gap="7"
         style={{ marginTop: "4rem" }}
       >
-        <img
-          src={gdsc}
-          alt="gdsc logo"
-          style={{ width: "30%", maxWidth: "200px" }}
-        />
-        <img
-          src={xfinity}
-          alt="xfinity logo"
-          style={{ width: "30%", maxWidth: "200px" }}
-        />
+        <LogoAnimation mode="left">
+          <img
+            src={gdsc}
+            alt="gdsc logo"
+            style={{ width: "auto", maxWidth: "200px" }}
+          />
+        </LogoAnimation>
+        <LogoAnimation mode="right">
+          <img
+            src={xfinity}
+            alt="xfinity logo"
+            style={{ width: "auto", maxWidth: "200px" }}
+          />
+        </LogoAnimation>
       </Flex>
       <Heading
         size={{ initial: "6", sm: "6", md: "7", lg: "8" }}
