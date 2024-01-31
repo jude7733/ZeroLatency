@@ -20,6 +20,7 @@ const Events = () => {
         color="#F2AFEF"
       >
         Events
+        
       </Heading>
       <Flex wrap="wrap" align="center" justify="center" gap="5" width="100%">
         <CustomAnimation mode="slideInTop">
