@@ -51,14 +51,10 @@ const Welcome = () => {
       <Flex
         align="center"
         justify="center"
-        width="100%"
         style={{
-          backgroundImage: `url(${bannerBg})`,
-          backgroundSize: "contain",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-          borderBottom: "3px solid purple",
+          borderBottom: "10px solid purple",
           borderRadius: "10%",
+          width: "97%",
         }}
       >
         <img src={banner} alt="banner" width="90%" />

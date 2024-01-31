@@ -21,7 +21,6 @@ const Footer = () => {
             <div className="footer-list">
               <p className="title footer-list-title has-after">Contact Us</p>
               <div className="contact-item" id="contact">
-                <br />
                 <span className="span">Location:</span>
 
                 <address className="contact-link">
@@ -69,7 +68,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <a href="#top" className="back-top-btn" aria-label="back to top">
+      <a href="#top" className="back-top-btn">
         <ArrowUpIcon color="white" />
       </a>
     </footer>

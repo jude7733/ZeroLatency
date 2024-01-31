@@ -21,8 +21,8 @@ const Sponsers = () => {
         align="center"
         pb="9"
         style={{
-          borderBottom: "2px purple groove",
-          width: "90%",
+          borderBottom: "3px purple groove",
+          width: "80%",
           borderRadius: "10%",
         }}
         mb="4"
@@ -36,9 +36,20 @@ const Sponsers = () => {
       >
         Co-Sponsers
       </Heading>
-      <Flex className="sponser" justify="center" align="center" mb="9">
-        {/* <img src={luminar} alt="luminar" /> */}
-        <img src={redTeam} alt="redTeam" width="45%" />
+      <Flex
+        className="sponser"
+        justify="center"
+        align="center"
+        mb="9"
+        style={{
+          borderBottom: "2px purple groove",
+          width: "70%",
+          borderRadius: "10%",
+          maxWidth: "600px",
+        }}
+      >
+        <img src={luminar} alt="luminar" width="35%" />
+        <img src={redTeam} alt="redTeam" width="35%" />
       </Flex>
       <Heading
         m="4"
