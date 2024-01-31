@@ -24,7 +24,8 @@ const slideInBottom = {
     transition: { duration: 0.5, ease: "easeInOut", delay: 1 },
   },
 };
-export const CustomAnimation = ({ children, mode, index = 1 }) => {
+export const
+  CustomAnimation = ({ children, mode, index = 1 }) => {
   return (
     <motion.div
       variants={
