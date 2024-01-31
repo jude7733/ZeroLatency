@@ -56,7 +56,7 @@ const Games = ({ type, desc }) => {
           <Flex justify="end" width="100%">
             <ButtonAnimation>
               {type === "Unity" ? (
-                <a href="https://forms.gle/VFUnbksa7iaKy9fi9">
+                <a href="https://forms.gle/Hzr9jz2zG2UybGky5">
                   <Button variant="outline">
                     Register
                     <PlayIcon />
