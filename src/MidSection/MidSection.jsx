@@ -1,10 +1,10 @@
 import Intro from "/vid/zero_latency.mp4";
 import "./Video.css";
 import Events from "../Events/Events";
-import { Flex, Heading } from "@radix-ui/themes";
+import { Flex } from "@radix-ui/themes";
 import gdsc from "../assets/gdsclogo.png";
 import xfinity from "../assets/xfinity-logo.png";
-import { LogoAnimation } from "../components/CustomAnimation";
+import { CustomAnimation, LogoAnimation } from "../components/CustomAnimation";
 
 const MidSection = () => {
   return (
@@ -32,25 +32,15 @@ const MidSection = () => {
           />
         </LogoAnimation>
       </Flex>
-      <Heading
-        size={{ initial: "6", sm: "6", md: "7", lg: "8" }}
-        style={{
-          textDecoration: "underline",
-          textAlign: "center",
-          marginTop: "4rem",
-        }}
-        color="#F2AFEF"
-      >
-        Events
-      </Heading>
-      <div style={{ position: "relative", width: "100%" }}>
-        <video className="video" autoPlay={true} loop muted>
-          <source src={Intro} type="video/mp4" />
-        </video>
-        <div className="overlay">
-          <Events />
-        </div>
+
+      <div className="videoContainer">
+        <CustomAnimation mode="reveal">
+          <video className="video" autoPlay={true} loop muted>
+            <source src={Intro} type="video/mp4" />
+          </video>
+        </CustomAnimation>
       </div>
+      <Events />
     </>
   );
 };

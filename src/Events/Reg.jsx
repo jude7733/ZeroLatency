@@ -106,6 +106,14 @@ const Reg = () => {
       mb="9"
       direction="column"
       gap="8"
+      width="100%"
+      style={{
+        borderBottom: "3px solid pink",
+        padding: "2rem 0",
+        borderRadius: "2rem",
+        borderTop: "2px groove pink",
+        maxWidth: "1200px",
+      }}
     >
       <Heading color="#9867C5">Workshop</Heading>
       <Games
@@ -125,7 +133,7 @@ const Reg = () => {
                E-football!⚽🎮"
       />
       <Games
-        type="Ar treasure hunt"
+        type="AR treasure hunt"
         desc=" Discover treasures all around you! Explore, search, and win
               exciting rewards in this augmented reality adventure!
               🌟 "

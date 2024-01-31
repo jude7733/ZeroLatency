@@ -41,7 +41,7 @@ const Welcome = () => {
       <ButtonAnimation>
         <a href="https://forms.gle/4hJcWo5N8dcaTPgX9">
           <Button
-            size={{ initial: "3", sm: "5", md: "6", xl: "7" }}
+            size={{ initial: "4", sm: "7", md: "8", xl: "9" }}
             variant="surface"
           >
             Register Now
@@ -57,7 +57,7 @@ const Welcome = () => {
           width: "97%",
         }}
       >
-        <img src={banner} alt="banner" width="90%" />
+        <img src={banner} alt="banner" width="100%" />
       </Flex>
       <TextAnimation>
         <Heading
@@ -67,6 +67,7 @@ const Welcome = () => {
             md: "8",
             xl: "9",
           }}
+          style={{marginTop: "2rem"}}
         >
           Experience Gaming Through
           <br /> Latest <span style={{ color: "purple" }}>Technologies</span>
