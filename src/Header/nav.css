@@ -88,10 +88,22 @@
   }
 
   .nav-elements {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    border-radius: 1rem;
+    padding: 5% 0;
     position: absolute;
     right: 0;
     top: 60px;
-    background-color: hsla(279, 42%, 9%, 1);
+    background: rgb(16, 13, 42);
+    background: linear-gradient(
+      90deg,
+      rgba(16, 13, 42, 1) 0%,
+      rgba(0, 0, 0, 1) 50%,
+      rgba(16, 13, 42, 1) 100%
+    );
     width: 0px;
     height: auto;
     transition: all 0.3s ease-in;
