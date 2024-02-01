@@ -32,7 +32,7 @@ const Navbar = () => {
               <a href="#events">EVENTS</a>
             </li>
             <li className="navbar-item">
-              <a href="#sponsers">SPONSERS</a>
+              <a href="#sponsers">SPONSORS</a>
             </li>
             <li className="navbar-item">
               <a href="#contact">CONTACT</a>
@@ -41,13 +41,6 @@ const Navbar = () => {
         </div>
 
         <div className="nav-right">
-          {/* <ButtonAnimation>
-            <a href="https://forms.gle/4hJcWo5N8dcaTPgX9">
-              <Button size={{ initial: "1", sm: "2", md: "2", xl: "4" }}>
-                Register
-              </Button>
-            </a>
-          </ButtonAnimation> */}
           <div className="menu-icon" onClick={handleShowNavbar}>
             {!showNavbar && <HamburgerMenuIcon />}
             {showNavbar && <DropdownMenuIcon />}

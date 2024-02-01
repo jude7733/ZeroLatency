@@ -13,7 +13,7 @@ const Sponsers = () => {
       id="sponsers"
     >
       <Heading m="4" color="purple">
-        Title Sponser
+        Title Sponsor
       </Heading>
       <Flex
         className="sponser"
@@ -34,7 +34,7 @@ const Sponsers = () => {
         color="purple"
         size={{ initial: "3", sm: "4", md: "5", lg: "6" }}
       >
-        Co-Sponsers
+        Co-Sponsors
       </Heading>
       <Flex
         className="sponser"
@@ -56,7 +56,7 @@ const Sponsers = () => {
         color="purple"
         size={{ initial: "2", sm: "3", md: "4", lg: "5" }}
       >
-        Other Sponsers
+        Other Sponsors
       </Heading>
       <Flex className="sponser" justify="center" align="center" mb="9">
         <img src={zoople} alt="zoople" />
