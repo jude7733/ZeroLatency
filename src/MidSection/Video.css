@@ -23,7 +23,6 @@
   padding: 10px;
 }
 
-/* reset */
 a {
   all: unset;
 }
@@ -63,17 +62,11 @@ a {
 
 .ImageTrigger {
   cursor: pointer;
-  border-radius: 100%;
-  display: inline-block;
 }
 .ImageTrigger:focus {
   box-shadow: 0 0 0 2px white;
 }
 
-.Image {
-  display: block;
-  border-radius: 100%;
-}
 .Image.normal {
   width: 45px;
   height: 45px;
@@ -85,15 +78,9 @@ a {
 
 .Text {
   margin: 0;
-  color: var(--mauve-12);
   font-size: 15px;
   line-height: 1.5;
-}
-.Text.faded {
-  color: var(--mauve-10);
-}
-.Text.bold {
-  font-weight: 500;
+  color: aliceblue;
 }
 
 @keyframes slideUpAndFade {

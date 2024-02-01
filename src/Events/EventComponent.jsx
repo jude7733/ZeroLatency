@@ -11,7 +11,6 @@ export const EventComponent = ({ title, type }) => {
     <Flex
       style={{
         backgroundColor: "rgb(0 0 0 / 40%)",
-        backdropFilter: "blur(5px)",
         borderRadius: "5%",
         borderBottomRightRadius: "20%",
         borderTopLeftRadius: "20%",

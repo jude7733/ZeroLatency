@@ -7,24 +7,35 @@ import gdsc from "../assets/gdsclogo.png";
 import xfinity from "../assets/xfinity-logo.png";
 import { CustomAnimation, LogoAnimation } from "../components/CustomAnimation";
 import { InstagramLogoIcon } from "@radix-ui/react-icons";
+import { useState } from "react";
 
 const MidSection = () => {
+  const [gdscEvent, setGdscEvent] = useState(false);
+  const [xfinityEvent, setXfinityEvent] = useState(false);
   return (
     <>
       <Flex
-        justify="center"
+        justify="space-around"
         align="center"
         gap="3"
-        style={{ marginTop: "4rem" }}
+        style={{ marginTop: "7rem", marginBottom: "3rem" }}
       >
         <LogoAnimation mode="left">
-          <HoverCard.Root>
-            <HoverCard.Trigger asChild>
+          <HoverCard.Root open={gdscEvent}>
+            <HoverCard.Trigger>
               <img
                 src={gdsc}
                 alt="gdsc logo"
                 style={{ maxWidth: "150px" }}
                 className="ImageTrigger"
+                onClick={() => {
+                  setGdscEvent(!gdscEvent);
+                  gdscEvent && setXfinityEvent(false);
+                }}
+                onMouseEnter={() => {
+                  setGdscEvent(true);
+                  setXfinityEvent(false);
+                }}
               />
             </HoverCard.Trigger>
             <HoverCard.Portal>
@@ -56,13 +67,21 @@ const MidSection = () => {
         </LogoAnimation>
 
         <LogoAnimation mode="right">
-          <HoverCard.Root>
-            <HoverCard.Trigger asChild>
+          <HoverCard.Root open={xfinityEvent}>
+            <HoverCard.Trigger>
               <img
                 src={xfinity}
                 alt="xfinity logo"
                 style={{ maxWidth: "150px" }}
                 className="ImageTrigger"
+                onClick={() => {
+                  setXfinityEvent(!xfinityEvent);
+                  xfinityEvent && setGdscEvent(false);
+                }}
+                onMouseEnter={() => {
+                  setXfinityEvent(true);
+                  setGdscEvent(false);
+                }}
               />
             </HoverCard.Trigger>
             <HoverCard.Portal>
