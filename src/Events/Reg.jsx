@@ -10,7 +10,7 @@ import {
 } from "../components/CustomAnimation";
 import { PlayIcon } from "@radix-ui/react-icons";
 
-const Games = ({ type, desc }) => {
+const Games = ({ type, desc, date="7 Feb" }) => {
   const bg =
     type === "Unity"
       ? unity
@@ -53,7 +53,8 @@ const Games = ({ type, desc }) => {
 
           <p className="desc">{desc}</p>
 
-          <Flex justify="end" width="100%">
+          <Flex justify="between" width="100%">
+            <Heading size="4" color="pink">{date}</Heading>
             <ButtonAnimation>
               {type === "Unity" ? (
                 <a href="https://forms.gle/Hzr9jz2zG2UybGky5">
@@ -120,8 +121,9 @@ const Reg = () => {
         type="Unity"
         desc="Explore creativity and innovation! 🚀 Register now for the
               ultimate Game Development experience and unleash your creativity🎮"
+        date="6 Feb"
       />
-      <Heading color="#9867C5">Competitions</Heading>
+      <Heading color="#9867C5">Tournaments</Heading>
       <Games
         type="Tekken"
         desc="Get ready to fight your way to the top in the electrifying
@@ -132,12 +134,12 @@ const Reg = () => {
         desc=" Kick off your digital soccer journey in the thrilling world of
                E-football!⚽🎮"
       />
-      <Games
+      {/* <Games
         type="AR treasure hunt"
         desc=" Discover treasures all around you! Explore, search, and win
               exciting rewards in this augmented reality adventure!
               🌟 "
-      />
+      /> */}
     </Flex>
   );
 };
