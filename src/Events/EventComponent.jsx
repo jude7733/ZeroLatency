@@ -10,7 +10,8 @@ export const EventComponent = ({ title, type }) => {
   return (
     <Flex
       style={{
-        backgroundColor: "rgb(0 0 0 / 50%)",
+        backgroundColor: "rgb(0 0 0 / 40%)",
+        backdropFilter: "blur(5px)",
         borderRadius: "5%",
         borderBottomRightRadius: "20%",
         borderTopLeftRadius: "20%",
@@ -25,7 +26,8 @@ export const EventComponent = ({ title, type }) => {
     >
       <div
         style={{
-          backgroundColor: "hsla(240, 63%, 13%, 1)",
+          background:
+            "linear-gradient(\n    45deg,\n    rgba(60, 7, 83, 1) 0%,\n    rgba(9, 9, 121, 0) 100%\n  )",
           padding: "20px",
           borderBottom: "hsla(267, 100%, 63%, 0.3) 4px ridge",
           borderRight: "hsla(267, 100%, 63%, 0.3) 3px ridge",

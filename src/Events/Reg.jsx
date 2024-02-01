@@ -10,7 +10,7 @@ import {
 } from "../components/CustomAnimation";
 import { PlayIcon } from "@radix-ui/react-icons";
 
-const Games = ({ type, desc, date="7 Feb" }) => {
+const Games = ({ type, desc, date = "7 Feb" }) => {
   const bg =
     type === "Unity"
       ? unity
@@ -32,6 +32,7 @@ const Games = ({ type, desc, date="7 Feb" }) => {
         maxWidth: "600px",
         height: "320px",
         borderRadius: "2%",
+        boxShadow: "2px 5px 5px rgba(255,192,203,0.5)",
       }}
       className="card"
     >
@@ -54,7 +55,9 @@ const Games = ({ type, desc, date="7 Feb" }) => {
           <p className="desc">{desc}</p>
 
           <Flex justify="between" width="100%">
-            <Heading size="4" color="pink">{date}</Heading>
+            <Heading size="4" color="pink">
+              {date}
+            </Heading>
             <ButtonAnimation>
               {type === "Unity" ? (
                 <a href="https://forms.gle/Hzr9jz2zG2UybGky5">
@@ -109,11 +112,13 @@ const Reg = () => {
       gap="8"
       width="100%"
       style={{
-        borderBottom: "3px solid pink",
+        borderBottom: "2px groove pink",
         padding: "2rem 0",
         borderRadius: "2rem",
         borderTop: "2px groove pink",
         maxWidth: "1200px",
+        backgroundColor: "rgb(0 0 0 / 20%)",
+        backdropFilter: "blur(10px)",
       }}
     >
       <Heading color="#9867C5">Workshop</Heading>
