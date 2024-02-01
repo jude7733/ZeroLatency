@@ -118,7 +118,7 @@ const Reg = () => {
         borderTop: "2px groove pink",
         maxWidth: "1200px",
         backgroundColor: "rgb(0 0 0 / 20%)",
-        backdropFilter: "blur(10px)",
+        backdropFilter: "blur(5px)",
       }}
     >
       <Heading color="#9867C5">Workshop</Heading>
