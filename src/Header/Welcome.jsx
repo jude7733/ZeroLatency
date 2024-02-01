@@ -1,6 +1,5 @@
 import { Button, Flex, Heading } from "@radix-ui/themes";
 import banner from "../assets/hero-banner.png";
-import bannerBg from "../assets/banner-bg.png";
 import { ButtonAnimation, TextAnimation } from "../components/CustomAnimation";
 
 const Welcome = () => {
