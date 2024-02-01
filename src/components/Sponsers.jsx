@@ -3,6 +3,7 @@ import arrow from "../assets/arrow-wing.png";
 import luminar from "../assets/luminar.png";
 import redTeam from "../assets/red-team.png";
 import zoople from "../assets/zoople.png";
+import { TextAnimation } from "./CustomAnimation";
 const Sponsers = () => {
   return (
     <Flex
@@ -12,9 +13,11 @@ const Sponsers = () => {
       direction="column"
       id="sponsers"
     >
-      <Heading m="4" color="purple">
-        Title Sponsor
-      </Heading>
+      <TextAnimation>
+        <Heading m="4" color="purple">
+          Title Sponsor
+        </Heading>
+      </TextAnimation>
       <Flex
         className="sponser"
         justify="center"
@@ -29,13 +32,15 @@ const Sponsers = () => {
       >
         <img src={arrow} alt="Arrow Wings" />
       </Flex>
+      <TextAnimation>
       <Heading
         m="4"
         color="purple"
         size={{ initial: "3", sm: "4", md: "5", lg: "6" }}
       >
         Co-Sponsors
-      </Heading>
+        </Heading>
+      </TextAnimation>
       <Flex
         className="sponser"
         justify="center"
@@ -51,13 +56,15 @@ const Sponsers = () => {
         <img src={luminar} alt="luminar" width="35%" />
         <img src={redTeam} alt="redTeam" width="35%" />
       </Flex>
+      <TextAnimation>
       <Heading
         m="4"
         color="purple"
         size={{ initial: "2", sm: "3", md: "4", lg: "5" }}
       >
         Other Sponsors
-      </Heading>
+        </Heading>
+      </TextAnimation>
       <Flex className="sponser" justify="center" align="center" mb="9">
         <img src={zoople} alt="zoople" />
       </Flex>
