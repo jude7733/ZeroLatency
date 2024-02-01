@@ -36,6 +36,9 @@ const MidSection = () => {
                   setGdscEvent(true);
                   setXfinityEvent(false);
                 }}
+                onMouseLeave={() => {
+                  setTimeout(() => setGdscEvent(false), 3000);
+                }}
               />
             </HoverCard.Trigger>
             <HoverCard.Portal>
@@ -81,6 +84,9 @@ const MidSection = () => {
                 onMouseEnter={() => {
                   setXfinityEvent(true);
                   setGdscEvent(false);
+                }}
+                onMouseLeave={() => {
+                  setTimeout(() => setXfinityEvent(false), 3000);
                 }}
               />
             </HoverCard.Trigger>
