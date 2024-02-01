@@ -7,7 +7,6 @@ const Events = () => {
     <Flex
       justify="center"
       align="center"
-      mt="5"
       mb="6"
       id="events"
       p="1"

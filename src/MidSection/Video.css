@@ -4,15 +4,16 @@
   justify-content: center;
   padding: 40vh 0;
   width: 100%;
+  background: rgb(16, 13, 42);
   background: linear-gradient(
     0deg,
-    rgb(16, 13, 42) 0%,
-    rgb(0, 0, 0) 30%,
-    rgb(0, 0, 0) 70%,
-    rgb(16, 13, 42) 100%
+    rgba(16, 13, 42, 0) 0%,
+    rgba(0, 0, 0, 1) 30%,
+    rgba(0, 0, 0, 1) 70%,
+    rgba(16, 13, 42, 0) 100%
   );
 }
-.video{
+.video {
   width: 100%;
   height: auto;
   max-width: 729px;
