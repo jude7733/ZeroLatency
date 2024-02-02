@@ -45,7 +45,10 @@ export const EventComponent = ({ title, type }) => {
           {title}
         </Heading>
       </div>
-      <div style={{ flex: 2, minWidth: "200px" }}>
+      <div
+        style={{ flex: 2, minWidth: "200px" }}
+        aria-details="https://sketchfab.com/3d-models/oculus-quest-2-3bdefae06ff04297a3e694faa5121156) by KrostGames"
+      >
         <Canvas>
           <ambientLight intensity={1} />
           <PresentationControls>

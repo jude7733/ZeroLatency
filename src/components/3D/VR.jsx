@@ -10,7 +10,7 @@ export function VR(props) {
   const { nodes, materials } = useGLTF("./models/VR.gltf");
   return (
     <group {...props} dispose={null} scale={2.2} rotation={[0.5,-0.7,0]}>
-      <directionalLight intensity={5} position={[-1, 3, 2]} />
+      <directionalLight intensity={3} position={[-1, 2, 1]} />
       <group scale={0.01}>
         <mesh
           geometry={nodes.Oculus_Q2_Carcaza_0.geometry}

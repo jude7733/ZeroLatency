@@ -12,10 +12,11 @@ export function Ps5(props) {
     <group
       {...props}
       dispose={null}
-      scale={13}
+      scale={13.5}
       position={[0.5, -2.5, 0]}
       rotation={[0, 1.4, 0]}
     >
+      <ambientLight intensity={0.6}/>
       <group scale={1.004}>
         <mesh
           geometry={nodes.Base002.geometry}
