@@ -5,12 +5,11 @@ import Reg from "./Events/Reg";
 import Sponsers from "./components/Sponsers";
 import Footer from "./Footer/Footer";
 import bg from "./assets/bg.jpg";
-import "./App.css";
+import ToastComponent from "./components/ToastComponent";
 
 function App() {
   return (
     <div
-      className="parent"
       style={{
         backgroundImage: `url(${bg})`,
         fontFamily: "Oxanium",
@@ -21,8 +20,9 @@ function App() {
       }}
     >
       <Music />
+      <ToastComponent />
       <Header />
-      <MidSection /> 
+      <MidSection />
       <Reg />
       <Sponsers />
       <Footer />
