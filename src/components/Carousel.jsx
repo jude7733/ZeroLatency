@@ -3,7 +3,6 @@ import { Carousel } from "react-responsive-carousel";
 import katvr from "../assets/KATVR.jpeg";
 import pcgaming from "../assets/PCgaming.jpeg";
 import psgaming from "../assets/PSgaming.jpeg";
-import { Flex } from "@radix-ui/themes";
 import "./carousel.css";
 
 const CarouselComponent = () => {

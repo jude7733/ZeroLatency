@@ -1,8 +1,6 @@
 import { Button, Flex, Heading } from "@radix-ui/themes";
 import unity from "../assets/Unity.jpg";
-import tekken from "../assets/tekken.jpg";
 import efootball from "../assets/E-football.jpeg";
-import Ar from "../assets/Ar.jpg";
 import "./reg.css";
 import {
   ButtonAnimation,
@@ -11,14 +9,7 @@ import {
 import { PlayIcon } from "@radix-ui/react-icons";
 
 const Games = ({ type, desc, date = "7 Feb" }) => {
-  const bg =
-    type === "Unity"
-      ? unity
-      : type === "Tekken"
-      ? tekken
-      : type === "E-football"
-      ? efootball
-      : Ar;
+  const bg = type === "Unity" ? unity : efootball;
 
   return (
     <Flex
@@ -61,13 +52,6 @@ const Games = ({ type, desc, date = "7 Feb" }) => {
             <ButtonAnimation>
               {type === "Unity" ? (
                 <a href="https://forms.gle/Hzr9jz2zG2UybGky5">
-                  <Button variant="outline">
-                    Register
-                    <PlayIcon />
-                  </Button>
-                </a>
-              ) : type === "Tekken" ? (
-                <a href="https://docs.google.com/forms/d/1fPICnf7TlkPvOycZ0MnHAM5oMxXTypGt5_BWhUZ_j14/edit">
                   <Button variant="outline">
                     Register
                     <PlayIcon />
@@ -121,7 +105,7 @@ const Reg = () => {
         backdropFilter: "blur(5px)",
       }}
     >
-      <Heading color="#9867C5">Workshop</Heading>
+      <Heading color="#9867C5">Register Now</Heading>
       <Games
         type="Unity"
         desc="Explore creativity and innovation! 🚀 Register now for the
@@ -129,22 +113,11 @@ const Reg = () => {
         date="6 Feb"
       />
       <Heading color="#9867C5">Tournaments</Heading>
-      {/* <Games
-        type="Tekken"
-        desc="Get ready to fight your way to the top in the electrifying
-              Tekken Tournament!🔥"
-      /> */}
       <Games
         type="E-football"
         desc=" Kick off your digital soccer journey in the thrilling world of
                E-football!⚽🎮"
       />
-      {/* <Games
-        type="AR treasure hunt"
-        desc=" Discover treasures all around you! Explore, search, and win
-              exciting rewards in this augmented reality adventure!
-              🌟 "
-      /> */}
     </Flex>
   );
 };
