@@ -129,11 +129,11 @@ const Reg = () => {
         date="6 Feb"
       />
       <Heading color="#9867C5">Tournaments</Heading>
-      <Games
+      {/* <Games
         type="Tekken"
         desc="Get ready to fight your way to the top in the electrifying
               Tekken Tournament!🔥"
-      />
+      /> */}
       <Games
         type="E-football"
         desc=" Kick off your digital soccer journey in the thrilling world of
