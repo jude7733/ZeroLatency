@@ -2,6 +2,7 @@ import "./nav.css";
 import logo from "../assets/logo.png";
 import { useState } from "react";
 import { DropdownMenuIcon, HamburgerMenuIcon } from "@radix-ui/react-icons";
+import { Button } from "@radix-ui/themes";
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
@@ -26,16 +27,24 @@ const Navbar = () => {
         <div className={`nav-elements  ${showNavbar && "active"}`}>
           <ul>
             <li className="navbar-item">
-              <a href="#home">HOME</a>
+              <a href="#home">
+                <Button variant="soft">HOME</Button>
+              </a>
             </li>
             <li className="navbar-item">
-              <a href="#events">EVENTS</a>
+              <a href="#events">
+                <Button variant="soft">EVENTS</Button>
+              </a>
             </li>
             <li className="navbar-item">
-              <a href="#sponsers">SPONSORS</a>
+              <a href="#sponsers">
+                <Button variant="soft">SPONSORS</Button>
+              </a>
             </li>
             <li className="navbar-item">
-              <a href="#contact">CONTACT</a>
+              <a href="#contact">
+                <Button variant="soft">CONTACT</Button>
+              </a>
             </li>
           </ul>
         </div>
