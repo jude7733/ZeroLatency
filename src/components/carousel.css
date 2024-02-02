@@ -1,0 +1,26 @@
+.carousel-root .carousel .slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  max-width: 500px;
+}
+.cimage {
+  width: 90%;
+  height: 90%;
+  max-width: 400px;
+}
+.carousel .carousel-status {
+  bottom: 0;
+  left: 0;
+  right: 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  max-width: min-content;
+}
+.control-arrow {
+  color: #fff;
+  margin: 15px;
+  cursor: pointer;
+}

@@ -22,7 +22,7 @@ function App() {
     >
       <Music />
       <Header />
-      <MidSection />  
+      <MidSection /> 
       <Reg />
       <Sponsers />
       <Footer />

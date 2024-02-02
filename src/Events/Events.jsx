@@ -8,6 +8,7 @@ const Events = () => {
       justify="center"
       align="center"
       mb="6"
+      mt="6"
       id="events"
       p="1"
       gap="6"

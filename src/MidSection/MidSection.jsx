@@ -8,6 +8,7 @@ import xfinity from "../assets/xfinity-logo.png";
 import { CustomAnimation, LogoAnimation } from "../components/CustomAnimation";
 import { InstagramLogoIcon } from "@radix-ui/react-icons";
 import { useState } from "react";
+import CarouselComponent from "../components/Carousel";
 
 const MidSection = () => {
   const [gdscEvent, setGdscEvent] = useState(false);
@@ -130,6 +131,7 @@ const MidSection = () => {
           </video>
         </CustomAnimation>
       </div>
+      <CarouselComponent />
       <Events />
     </>
   );
