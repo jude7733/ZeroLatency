@@ -3,6 +3,7 @@ import { Carousel } from "react-responsive-carousel";
 import katvr from "../assets/KATVR.jpeg";
 import pcgaming from "../assets/PCgaming.jpeg";
 import psgaming from "../assets/PSgaming.jpeg";
+import vrgaming from "../assets/VRgaming.jpeg";
 import "./carousel.css";
 
 const CarouselComponent = () => {
@@ -16,6 +17,9 @@ const CarouselComponent = () => {
       </div>
       <div className="cimage">
         <img src={psgaming} />
+      </div>
+      <div className="cimage">
+        <img src={vrgaming} />
       </div>
     </Carousel>
   );
