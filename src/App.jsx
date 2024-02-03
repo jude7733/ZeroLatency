@@ -6,6 +6,9 @@ import Sponsers from "./components/Sponsers";
 import Footer from "./Footer/Footer";
 import bg from "./assets/bg.jpg";
 import ToastComponent from "./components/ToastComponent";
+import Events from "./Events/Events";
+import CarouselComponent from "./components/Carousel";
+import Explore from "./components/Explore";
 
 function App() {
   return (
@@ -23,6 +26,9 @@ function App() {
       <ToastComponent />
       <Header />
       <MidSection />
+      <Explore />
+      <CarouselComponent />
+      <Events />
       <Reg />
       <Sponsers />
       <Footer />

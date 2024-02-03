@@ -1,6 +1,5 @@
 import Intro from "/vid/zero_latency.mp4";
 import "./Video.css";
-import Events from "../Events/Events";
 import { Flex } from "@radix-ui/themes";
 import * as HoverCard from "@radix-ui/react-hover-card";
 import gdsc from "../assets/gdsclogo.png";
@@ -8,7 +7,6 @@ import xfinity from "../assets/xfinity-logo.png";
 import { CustomAnimation, LogoAnimation } from "../components/CustomAnimation";
 import { InstagramLogoIcon } from "@radix-ui/react-icons";
 import { useState } from "react";
-import CarouselComponent from "../components/Carousel";
 
 const MidSection = () => {
   const [gdscEvent, setGdscEvent] = useState(false);
@@ -131,8 +129,6 @@ const MidSection = () => {
           </video>
         </CustomAnimation>
       </div>
-      <CarouselComponent />
-      <Events />
     </>
   );
 };
