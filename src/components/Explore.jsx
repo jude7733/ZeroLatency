@@ -33,7 +33,7 @@ const Explore = () => {
           size={{ initial: "5", md: "6", lg: "7" }}
           mb={{ initial: "3", md: "4", lg: "5" }}
         >
-          Explore the world of AR and VR
+          Explore the world of Virtual Reality
         </Heading>
         <Heading size={{ initial: "3", md: "4", lg: "4" }}>
           Dive into a world beyond screens. 🌟 Gather your gaming squad, grab

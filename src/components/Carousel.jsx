@@ -4,6 +4,8 @@ import katvr from "../assets/KATVR.jpeg";
 import pcgaming from "../assets/PCgaming.jpeg";
 import psgaming from "../assets/PSgaming.jpeg";
 import vrgaming from "../assets/VRgaming.jpeg";
+import vrcricket from "../assets/VRCricket.jpeg";
+import vrexp from "../assets/VRExp.jpeg";
 import "./carousel.css";
 
 const CarouselComponent = () => {
@@ -20,6 +22,12 @@ const CarouselComponent = () => {
       </div>
       <div className="cimage">
         <img src={vrgaming} />
+      </div>
+      <div className="cimage">
+        <img src={vrcricket} />
+      </div>
+      <div className="cimage">
+        <img src={vrexp} />
       </div>
     </Carousel>
   );
