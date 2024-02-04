@@ -24,6 +24,7 @@ const Header = () => {
               md: "5",
               xl: "7",
             }}
+            style={{ padding: "10px" }}
           >
             Experience the AR and VR
           </Heading>
