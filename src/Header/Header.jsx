@@ -74,7 +74,7 @@ const Header = () => {
             Experience Gaming Through
             <br /> Latest <span style={{ color: "#5D3FD3" }}>Technologies</span>
           </Heading>
-          <p>
+          <p style={{padding: "10px"}}>
             Our success thrives on a dedicated, talented team to experience
             gaming. Join us at the event.
           </p>

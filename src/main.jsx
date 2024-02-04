@@ -10,7 +10,7 @@ import * as Toast from "@radix-ui/react-toast";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Theme appearance="inherit" accentColor="purple" radius="large">
-      <Toast.Provider duration={4000}>
+      <Toast.Provider duration={18000}>
         <App />
       </Toast.Provider>
     </Theme>
