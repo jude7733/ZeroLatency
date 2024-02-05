@@ -3,70 +3,127 @@ import arrow from "../assets/arrow-wing.png";
 import luminar from "../assets/luminar.png";
 import redTeam from "../assets/red-team.png";
 import zoople from "../assets/zoople.png";
+import gameShack from "../assets/gameShack.png";
+import immied from "../assets/Immied-Logo.png";
+import siUK from "../assets/SI-UK-Logo.png";
+import t4Logo from "../assets/T4Logo.png";
+import triLogo from "../assets/triLogo.png";
 import { TextAnimation } from "./CustomAnimation";
+
 const Sponsers = () => {
   return (
-    <Flex
-      className="sponsers"
-      justify="center"
-      align="center"
-      direction="column"
-      id="sponsers"
-    >
+    <Flex justify="center" align="center" direction="column" id="sponsers">
       <TextAnimation>
         <Heading m="4" color="purple">
           Title Sponsor
         </Heading>
       </TextAnimation>
       <Flex
-        className="sponser"
         justify="center"
         align="center"
         pb="9"
         style={{
           borderBottom: "3px purple groove",
-          width: "80%",
+          width: "90%",
           borderRadius: "5%",
         }}
         mb="4"
       >
-        <img src={arrow} alt="Arrow Wings" />
+        <img
+          src={arrow}
+          alt="Arrow Wings"
+          width="40%"
+          style={{
+            maxWidth: "300px",
+          }}
+        />
       </Flex>
       <TextAnimation>
-      <Heading
-        m="4"
-        color="purple"
-        size={{ initial: "3", sm: "4", md: "5", lg: "6" }}
-      >
-        Co-Sponsors
+        <Heading
+          m="4"
+          color="purple"
+          size={{ initial: "3", sm: "4", md: "5", lg: "6" }}
+        >
+          Co-Sponsors
         </Heading>
       </TextAnimation>
       <Flex
-        className="sponser"
         justify="center"
         align="center"
         mb="9"
+        wrap="wrap"
+        gap="6"
+        p="5"
         style={{
           borderBottom: "2px purple groove",
-          width: "70%",
+          width: "80%",
           borderRadius: "5%",
-          maxWidth: "600px",
+          maxWidth: "1200px",
         }}
       >
-        <img src={luminar} alt="luminar" width="35%" />
-        <img src={redTeam} alt="redTeam" width="35%" />
+        <img
+          src={luminar}
+          alt="luminar"
+          width="40%"
+          style={{ maxWidth: "250px" }}
+        />
+        <img src={siUK} alt="SIUK" width="40%" style={{ maxWidth: "250px" }} />
+        <img
+          src={immied}
+          alt="Immied"
+          width="40%"
+          style={{ maxWidth: "250px" }}
+        />
+        <img
+          src={redTeam}
+          alt="redTeam"
+          width="40%"
+          style={{ maxWidth: "250px" }}
+        />
       </Flex>
       <TextAnimation>
-      <Heading
-        m="4"
-        color="purple"
-        size={{ initial: "2", sm: "3", md: "4", lg: "5" }}
-      >
-        Other Sponsors
+        <Heading
+          m="4"
+          color="purple"
+          size={{ initial: "2", sm: "3", md: "4", lg: "5" }}
+        >
+          Other Sponsors
         </Heading>
       </TextAnimation>
-      <Flex className="sponser" justify="center" align="center" mb="9">
-        <img src={zoople} alt="zoople" />
+      <Flex
+        justify="center"
+        align="center"
+        mb="9"
+        gap="6"
+        wrap="wrap"
+        style={{
+          width: "70%",
+        }}
+      >
+        <img
+          src={zoople}
+          alt="zoople"
+          width="40%"
+          style={{ maxWidth: "200px" }}
+        />
+        <img
+          src={gameShack}
+          alt="gameShack"
+          width="40%"
+          style={{ maxWidth: "200px" }}
+        />
+        <img
+          src={t4Logo}
+          alt="t4Logo"
+          width="40%"
+          style={{ maxWidth: "200px" }}
+        />
+        <img
+          src={triLogo}
+          alt="triLogo"
+          width="40%"
+          style={{ maxWidth: "200px" }}
+        />
       </Flex>
     </Flex>
   );
