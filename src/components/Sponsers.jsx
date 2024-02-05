@@ -7,7 +7,7 @@ import gameShack from "../assets/gameShack.png";
 import immied from "../assets/Immied-Logo.png";
 import siUK from "../assets/SI-UK-Logo.png";
 import t4Logo from "../assets/T4Logo.png";
-import triLogo from "../assets/triLogo.png";
+import terabotsLogo from "../assets/terabots-logo.png";
 import { TextAnimation } from "./CustomAnimation";
 
 const Sponsers = () => {
@@ -62,13 +62,6 @@ const Sponsers = () => {
         }}
       >
         <img
-          src={luminar}
-          alt="luminar"
-          width="40%"
-          style={{ maxWidth: "250px" }}
-        />
-        <img src={siUK} alt="SIUK" width="40%" style={{ maxWidth: "250px" }} />
-        <img
           src={immied}
           alt="Immied"
           width="40%"
@@ -80,6 +73,13 @@ const Sponsers = () => {
           width="40%"
           style={{ maxWidth: "250px" }}
         />
+        <img
+          src={luminar}
+          alt="luminar"
+          width="40%"
+          style={{ maxWidth: "250px" }}
+        />
+        <img src={siUK} alt="SIUK" width="40%" style={{ maxWidth: "250px" }} />
       </Flex>
       <TextAnimation>
         <Heading
@@ -119,8 +119,8 @@ const Sponsers = () => {
           style={{ maxWidth: "200px" }}
         />
         <img
-          src={triLogo}
-          alt="triLogo"
+          src={terabotsLogo}
+          alt="Terabot sLogo"
           width="40%"
           style={{ maxWidth: "200px" }}
         />
