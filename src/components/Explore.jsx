@@ -1,6 +1,7 @@
 import { Flex, Heading } from "@radix-ui/themes";
 import { Canvas } from "@react-three/fiber";
 import { Torus3D } from "./3D/Torus3D";
+import { OrbitControls } from "@react-three/drei";
 
 const Explore = () => {
   return (
@@ -24,6 +25,7 @@ const Explore = () => {
         <Canvas>
           <ambientLight intensity={0.4} />
           <directionalLight position={[0, 0, 10]} intensity={6} />
+          <OrbitControls />
           <Torus3D />
         </Canvas>
       </div>
