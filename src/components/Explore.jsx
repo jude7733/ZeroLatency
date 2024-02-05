@@ -23,8 +23,8 @@ const Explore = () => {
     >
       <div style={{ height: "30vh", flex: 1 }}>
         <Canvas>
-          <ambientLight intensity={0.4} />
-          <directionalLight position={[0, 0, 10]} intensity={6} />
+          <ambientLight intensity={0.5} />
+          <directionalLight position={[0, 0, -10]} intensity={3} />
           <OrbitControls />
           <Torus3D />
         </Canvas>

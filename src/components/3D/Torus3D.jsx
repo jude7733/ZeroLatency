@@ -8,9 +8,9 @@ export const Torus3D = ({ position = [0, 0, 0] }) => {
     ref.current.rotation.x += 0.01;
   });
   return (
-    <mesh position={position} ref={ref}>
-        <torusKnotGeometry args={[1.6, 0.4, 1000, 50]} />
-        <MeshWobbleMaterial factor={6} speed={0.8} color="purple" />
-      </mesh>
+    <mesh position={position} ref={ref} rotation={[0, 1, 0]}>
+      <torusKnotGeometry args={[1.6, 0.4, 1000, 50]} />
+      <MeshWobbleMaterial factor={6} speed={0.8} color="purple" />
+    </mesh>
   );
 };
